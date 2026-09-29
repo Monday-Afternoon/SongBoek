@@ -111,8 +111,8 @@ function songsMap() {
 }
 
 async function toonOverzicht() {
-  document.title = 'Songboek';
-  app.innerHTML = '<h1>Songboek</h1><input type="search" id="zoek" placeholder="Zoek op titel of artiest" aria-label="Zoeken"><div class="lijst" id="lijst"></div>';
+  document.title = 'Songboek - A3$oft 2026';
+  app.innerHTML = '<h1>🎵 Songboek - The Monday Afternoon 🎵 -- 🎹 A3$oft 2026 🎸</h1><input type="search" id="zoek" placeholder="Zoek op titel of artiest" aria-label="Zoeken"><div class="lijst" id="lijst"></div>';
   let songs;
   try {
     const r = await fetch((await songsMap()) + '/index.json', {cache:'no-cache'});
