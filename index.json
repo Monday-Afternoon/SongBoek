@@ -84,6 +84,12 @@
   "key": "A"
  },
  {
+  "bestand": "Black Girl (where did you sleep last night).html",
+  "titel": "Black Girl",
+  "artiest": "",
+  "key": "Am"
+ },
+ {
   "bestand": "Black Velvet Band.html",
   "titel": "Black Velvet Band",
   "artiest": "The Dubliners",
@@ -204,6 +210,12 @@
   "key": "C"
  },
  {
+  "bestand": "Down By The Salley Gardens.html",
+  "titel": "Down By The Salley Gardens",
+  "artiest": "",
+  "key": "G"
+ },
+ {
   "bestand": "Drivin' My Life Away.html",
   "titel": "Drivin' My Life Away",
   "artiest": "",
@@ -234,10 +246,22 @@
   "key": "F"
  },
  {
+  "bestand": "Good Night Irene.html",
+  "titel": "Good Night Irene",
+  "artiest": "",
+  "key": "E"
+ },
+ {
   "bestand": "Good Times.html",
   "titel": "Good Times",
   "artiest": "",
-  "key": "Ab"
+  "key": "A"
+ },
+ {
+  "bestand": "Guantanamera.html",
+  "titel": "Guantanamera",
+  "artiest": "",
+  "key": "G"
  },
  {
   "bestand": "Hard Times Come Again No More.html",
@@ -378,6 +402,12 @@
   "key": "C"
  },
  {
+  "bestand": "Little Lion Man.html",
+  "titel": "Little Lion Man",
+  "artiest": "",
+  "key": "Dm"
+ },
+ {
   "bestand": "Living Next Door To Alice.html",
   "titel": "Living Next Door To Alice",
   "artiest": "",
@@ -430,6 +460,12 @@
   "titel": "Morning Of My Life",
   "artiest": "",
   "key": "G"
+ },
+ {
+  "bestand": "Motherland.html",
+  "titel": "Motherland",
+  "artiest": "",
+  "key": "Em"
  },
  {
   "bestand": "Mull Of Kintyre.html",
@@ -578,7 +614,7 @@
  {
   "bestand": "The Fields Of Athenry.html",
   "titel": "The Fields Of Athenry",
-  "artiest": "The Dubliners",
+  "artiest": "",
   "key": "E"
  },
  {
@@ -600,10 +636,16 @@
   "key": "A"
  },
  {
+  "bestand": "The Midnight Special.html",
+  "titel": "The Midnight Special",
+  "artiest": "Creedence Clearwater Revival  1969 (Willy and the Poor Boys - Leadbelly)",
+  "key": "D"
+ },
+ {
   "bestand": "The town I loved So Well.html",
   "titel": "The Town I loved So Well",
   "artiest": "",
-  "key": "G"
+  "key": "Bes"
  },
  {
   "bestand": "The Visitor.html",
@@ -618,6 +660,12 @@
   "key": "G"
  },
  {
+  "bestand": "The Wild Rover.html",
+  "titel": "The Wild Rover",
+  "artiest": "",
+  "key": "G"
+ },
+ {
   "bestand": "They Call Me The Breeze.html",
   "titel": "They Call Me The Breeze",
   "artiest": "J. J. Cale (1972)",
@@ -628,6 +676,12 @@
   "titel": "This Strange Effect",
   "artiest": "",
   "key": "Em"
+ },
+ {
+  "bestand": "This Train Is Bound For Glory.html",
+  "titel": "This Train Is Bound For Glory",
+  "artiest": "",
+  "key": "Eb"
  },
  {
   "bestand": "Tussen Die Liefde En Die Leegte.html",
@@ -660,6 +714,12 @@
   "key": "C"
  },
  {
+  "bestand": "What A Wonderful World.html",
+  "titel": "What A Wonderful World",
+  "artiest": "",
+  "key": "F"
+ },
+ {
   "bestand": "When Im Sixty Four.html",
   "titel": "When Im Sixty Four",
   "artiest": "",
@@ -676,6 +736,12 @@
   "titel": "Wicked Game",
   "artiest": "",
   "key": "Bm"
+ },
+ {
+  "bestand": "Wild Mountain Thyme.html",
+  "titel": "Wild Mountain Thyme",
+  "artiest": "",
+  "key": "G"
  },
  {
   "bestand": "Wilhelmus.html",
@@ -700,6 +766,12 @@
   "titel": "Wonderful Life",
   "artiest": "",
   "key": ""
+ },
+ {
+  "bestand": "Wonderful Tonight.html",
+  "titel": "Wonderful Tonight",
+  "artiest": "",
+  "key": "G"
  },
  {
   "bestand": "You Aint Goin Nowhere - Byrds.html",
