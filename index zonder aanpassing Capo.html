@@ -79,7 +79,7 @@ function parseSong(tekst) {
     const r = raw.trim();
     if (!r) { if (regels.length && regels[regels.length-1].t !== 'leeg') regels.push({t:'leeg'}); continue; }
     if (!kop) { kop = r; continue; }
-    if (/^capo\b/i.test(r)) { capo = r; continue; }
+    if (/^capo\s*:/i.test(r)) { capo = r; continue; }
     let m;
     if ((m = r.match(/^<b>(.*)<\/b>$/i))) { regels.push({t:'sec', tekst:m[1].trim()}); continue; }
     if ((m = r.match(/^\{(.+)\}$/))) { regels.push({t:'akk', akkoorden:m[1].trim().split(/\s+/)}); continue; }
@@ -90,16 +90,6 @@ function parseSong(tekst) {
     regels.push({t:'ly', segs});
   }
   return {meta, key, kop, capo, regels};
-}
-
-// 'Capo: No capo', 'Capo: -' of 'Capo: geen' -> 0; 'Capo: 2' of 'Capo: 2e fret' -> 2
-const ROMEINS = {I:1,II:2,III:3,IV:4,V:5,VI:6,VII:7,VIII:8,IX:9,X:10,XI:11,XII:12};
-function capoUitTekst(s) {
-  s = s || '';
-  const m = s.match(/\d+/);
-  if (m) return Math.min(parseInt(m[0], 10), 11);
-  const r = s.match(/\b(XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)\b/);
-  return r ? Math.min(ROMEINS[r[1]], 11) : 0;
 }
 
 function youtubeId(u) {
@@ -121,8 +111,8 @@ function songsMap() {
 }
 
 async function toonOverzicht() {
-  document.title = 'Songboek';
-  app.innerHTML = '<h1>Songboek</h1><input type="search" id="zoek" placeholder="Zoek op titel of artiest" aria-label="Zoeken"><div class="lijst" id="lijst"></div>';
+  document.title = 'Songboek - A3$oft 2026';
+  app.innerHTML = '<h1>🎵 Songboek - The Monday Afternoon 🎵 -- 🎹 A3$oft 2026 🎸</h1><input type="search" id="zoek" placeholder="Zoek op titel of artiest" aria-label="Zoeken"><div class="lijst" id="lijst"></div>';
   let songs;
   try {
     const r = await fetch((await songsMap()) + '/index.json', {cache:'no-cache'});
@@ -160,8 +150,7 @@ async function toonSong(bestand) {
   const km = song.key.match(/^([A-G][#b]?)(m?)/);
   const origIdx = km ? idx(km[1]) : -1;
   const mineur = km ? km[2] === 'm' : false;
-  const capoStart = capoUitTekst(song.capo);
-  let stap = 0, capo = capoStart;
+  let stap = 0, capo = 0;
   const vid = youtubeId(song.meta.youtubeurl);
 
   app.innerHTML = `<a class="terug" href="#">‹ Alle songs</a>
@@ -178,7 +167,7 @@ async function toonSong(bestand) {
     const doel = origIdx < 0 ? 0 : (origIdx + stap + 120) % 12;
     const vorm = origIdx < 0 ? 0 : (origIdx + stap - capo + 120) % 12;
     const tabel = spelling(vorm, mineur);
-    const tr = c => transponeer(c, stap + capoStart - capo, tabel);
+    const tr = c => transponeer(c, stap - capo, tabel);
     if (origIdx >= 0) {
       const naam = spelling(doel, mineur)[doel] + (mineur ? 'm' : '');
       const vormNaam = tabel[vorm] + (mineur ? 'm' : '');
@@ -187,7 +176,7 @@ async function toonSong(bestand) {
         '<button data-s="-1" aria-label="Halve toon lager">−</button><button data-s="1" aria-label="Halve toon hoger">+</button><span class="sp"></span>' +
         KNOPPEN.map(k => `<button data-k="${idx(k)}" class="${idx(k) === doel ? 'aan' : ''}">${k}${mineur ? 'm' : ''}</button>`).join('') +
         '<span style="flex-basis:100%;height:0"></span><span class="info">Capo:</span>' +
-        Array.from({length: Math.max(8, capoStart + 1)}, (_, c) => c).map(c => `<button data-c="${c}" class="${c === capo ? 'aan' : ''}">${c || 'geen'}</button>`).join('');
+        [0,1,2,3,4,5,6,7].map(c => `<button data-c="${c}" class="${c === capo ? 'aan' : ''}">${c || 'geen'}</button>`).join('');
     }
     document.getElementById('tekst').innerHTML = song.regels.map(r => {
       if (r.t === 'leeg') return '<div class="leeg"></div>';
