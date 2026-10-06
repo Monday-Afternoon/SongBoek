@@ -135,7 +135,7 @@
   "bestand": "Brood Voor Morgenvroeg - Bart Peeters.html",
   "titel": "Brood Voor Morgenvroeg - Bart Peeters",
   "artiest": "",
-  "key": ""
+  "key": "Em"
  },
  {
   "bestand": "Buona sera Signorina Buona sera - Louis Prima.html",
@@ -178,6 +178,12 @@
   "titel": "Cry Me A River Chordify",
   "artiest": "",
   "key": "Em"
+ },
+ {
+  "bestand": "De Monniken.html",
+  "titel": "De Monniken",
+  "artiest": "",
+  "key": "C"
  },
  {
   "bestand": "De Vondeling Van Ameland.html",
@@ -333,7 +339,7 @@
   "bestand": "Inisheer.html",
   "titel": "Inisheer",
   "artiest": "",
-  "key": "C"
+  "key": "D"
  },
  {
   "bestand": "Irene Goodnight.html",
@@ -379,7 +385,7 @@
  },
  {
   "bestand": "La Bamba.html",
-  "titel": "Los Lobos",
+  "titel": "La Bamba",
   "artiest": "",
   "key": "C"
  },
@@ -483,7 +489,7 @@
   "bestand": "Motherland.html",
   "titel": "Motherland",
   "artiest": "",
-  "key": "Em"
+  "key": "F"
  },
  {
   "bestand": "Mull Of Kintyre.html",
@@ -650,8 +656,8 @@
  {
   "bestand": "The Joker.html",
   "titel": "The Joker",
-  "artiest": "",
-  "key": ""
+  "artiest": "Steve Miller Band (1973)",
+  "key": "F"
  },
  {
   "bestand": "The Leaving Of Liverpool.html",
