@@ -161,10 +161,7 @@ async function toonSong(bestand) {
   const origIdx = km ? idx(km[1]) : -1;
   const mineur = km ? km[2] === 'm' : false;
   const capoStart = capoUitTekst(song.capo);
-  // startKey in <meta> (bijv. startKey: Bb): de song opent meteen in die klinkende key
-  const sk = (song.meta.startkey || '').match(/^([A-G][#b]?)/);
-  let stap = (sk && origIdx >= 0 && idx(sk[1]) >= 0) ? (idx(sk[1]) - origIdx + 12) % 12 : 0;
-  let capo = capoStart;
+  let stap = 0, capo = capoStart;
   const vid = youtubeId(song.meta.youtubeurl);
 
   app.innerHTML = `<a class="terug" href="#">‹ Alle songs</a>
