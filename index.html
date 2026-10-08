@@ -25,6 +25,8 @@ input[type=search]{width:100%;padding:11px 12px;font:inherit;border:1px solid va
 .bedien button.aan{background:var(--chord);border-color:var(--chord);color:var(--bg);font-weight:700}
 .bedien button:focus-visible{outline:2px solid var(--chord);outline-offset:2px}
 .bedien .sp{width:10px}
+.noten{display:inline-block;margin:4px 0 8px;padding:8px 14px;border:1px solid var(--chord);border-radius:6px;color:var(--chord);text-decoration:none;font-weight:600}
+.noten:hover,.noten:focus-visible{background:var(--card)}
 .video{aspect-ratio:16/9;width:100%;max-width:560px;border:0;border-radius:6px;background:#000;margin:6px 0 4px}
 .tekst{margin-top:14px}
 .sec{font-weight:700;margin:1.4em 0 .35em;color:var(--muted)}
@@ -146,9 +148,10 @@ async function toonOverzicht() {
 
 async function toonSong(bestand) {
   app.innerHTML = '<p class="info">Laden…</p>';
+  const map = await songsMap();
   let song;
   try {
-    const r = await fetch((await songsMap()) + '/' + encodeURIComponent(bestand));
+    const r = await fetch(map + '/' + encodeURIComponent(bestand));
     if (!r.ok) throw new Error(r.status);
     song = parseSong(await r.text());
   } catch (e) {
@@ -173,6 +176,7 @@ async function toonSong(bestand) {
     <p class="info" id="keyinfo"></p>
     ${song.capo ? `<p class="info">${esc(song.capo)}</p>` : ''}
     <div class="bedien" id="bedien"></div>
+    ${song.meta.noten ? `<a class="noten" href="${map}/${encodeURIComponent(song.meta.noten)}" target="_blank" rel="noopener">♪ Notenbeeld</a><br>` : ''}
     ${vid ? `<iframe class="video" src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(vid)}" title="Video bij ${esc(titel)}" allow="encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>` : ''}
     <div class="tekst" id="tekst"></div>`;
   if (song.meta.lettertype) document.getElementById('tekst').style.fontFamily = `"${song.meta.lettertype}", system-ui, sans-serif`;
