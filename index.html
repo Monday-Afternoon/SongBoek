@@ -25,7 +25,8 @@ input[type=search]{width:100%;padding:11px 12px;font:inherit;border:1px solid va
 .bedien button.aan{background:var(--chord);border-color:var(--chord);color:var(--bg);font-weight:700}
 .bedien button:focus-visible{outline:2px solid var(--chord);outline-offset:2px}
 .bedien .sp{width:10px}
-.noten{display:inline-block;margin:4px 0 8px;padding:8px 14px;border:1px solid var(--chord);border-radius:6px;color:var(--chord);text-decoration:none;font-weight:600}
+.notenrij{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 10px}
+.noten{display:inline-block;padding:8px 14px;border:1px solid var(--chord);border-radius:6px;color:var(--chord);text-decoration:none;font-weight:600}
 .noten:hover,.noten:focus-visible{background:var(--card)}
 .video{aspect-ratio:16/9;width:100%;max-width:560px;border:0;border-radius:6px;background:#000;margin:6px 0 4px}
 .tekst{margin-top:14px}
@@ -69,8 +70,14 @@ function transponeer(akkoord, stappen, tabel) {
 
 function parseSong(tekst) {
   const meta = {};
+  const bestanden = [];   // alle <meta>-velden waarvan de waarde een pdf/afbeelding is -> knop
   tekst = tekst.replace(/<meta>([\s\S]*?)<\/meta>/i, (_, m) => {
-    m.split(';').forEach(d => { const i = d.indexOf(':'); if (i > 0) meta[d.slice(0,i).trim().toLowerCase()] = d.slice(i+1).trim(); });
+    m.split(';').forEach(d => {
+      const i = d.indexOf(':'); if (i <= 0) return;
+      const naam = d.slice(0,i).trim(), waarde = d.slice(i+1).trim();
+      meta[naam.toLowerCase()] = waarde;
+      if (/\.(pdf|jpe?g|png|gif|webp)$/i.test(waarde)) bestanden.push([naam, waarde]);
+    });
     return '';
   });
   let key = '';
@@ -91,7 +98,7 @@ function parseSong(tekst) {
     for (let i = 1; i < delen.length; i += 2) segs.push({ch:delen[i], ly:delen[i+1] || ''});
     regels.push({t:'ly', segs});
   }
-  return {meta, key, kop, capo, regels};
+  return {meta, bestanden, key, kop, capo, regels};
 }
 
 // 'Capo: No capo', 'Capo: -' of 'Capo: geen' -> 0; 'Capo: 2' of 'Capo: 2e fret' -> 2
@@ -169,6 +176,10 @@ async function toonSong(bestand) {
   let stap = (sk && origIdx >= 0 && idx(sk[1]) >= 0) ? (idx(sk[1]) - origIdx + 12) % 12 : 0;
   let capo = capoStart;
   const vid = youtubeId(song.meta.youtubeurl);
+  // knoppen: elk <meta>-veld met een pdf- of afbeeldingsbestand (noten, Sopraan, Alt, A, J, ...)
+  const notenKnoppen = song.bestanden
+    .map(([naam, w]) => `<a class="noten" href="${map}/${encodeURIComponent(w)}" target="_blank" rel="noopener">${naam.toLowerCase() === 'noten' ? '♪ Notenbeeld' : esc(naam)}</a>`)
+    .join('');
 
   app.innerHTML = `<a class="terug" href="#">‹ Alle songs</a>
     <h1>${esc(titel)}</h1>
@@ -176,7 +187,7 @@ async function toonSong(bestand) {
     <p class="info" id="keyinfo"></p>
     ${song.capo ? `<p class="info">${esc(song.capo)}</p>` : ''}
     <div class="bedien" id="bedien"></div>
-    ${song.meta.noten ? `<a class="noten" href="${map}/${encodeURIComponent(song.meta.noten)}" target="_blank" rel="noopener">♪ Notenbeeld</a><br>` : ''}
+    ${notenKnoppen ? `<div class="notenrij">${notenKnoppen}</div>` : ''}
     ${vid ? `<iframe class="video" src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(vid)}" title="Video bij ${esc(titel)}" allow="encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>` : ''}
     <div class="tekst" id="tekst"></div>`;
   if (song.meta.lettertype) document.getElementById('tekst').style.fontFamily = `"${song.meta.lettertype}", system-ui, sans-serif`;
