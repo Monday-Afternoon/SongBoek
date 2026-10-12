@@ -165,7 +165,7 @@
   "titel": "Buona sera Signorina Buona sera - Louis Prima",
   "artiest": "",
   "key": "D#",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "Bury Me Under The Weeping Willow-Chris Thiele.html",
@@ -177,9 +177,9 @@
  {
   "bestand": "Carrickfergus.html",
   "titel": "Carrickfergus",
-  "artiest": "",
+  "artiest": "Van Morrison",
   "key": "Am",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "Child In Time.html",
@@ -263,7 +263,7 @@
   "titel": "Down By The Salley Gardens",
   "artiest": "",
   "key": "G",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "Drivin' My Life Away.html",
@@ -305,7 +305,7 @@
   "titel": "Good Night Irene",
   "artiest": "",
   "key": "E",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "Good Times.html",
@@ -319,12 +319,12 @@
   "titel": "Guantanamera",
   "artiest": "",
   "key": "G",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "Hard Times Come Again No More.html",
   "titel": "Hard Times Come Again No More",
-  "artiest": "",
+  "artiest": "(Stephen Foster 1854) The Chieftains (2012)",
   "key": "D",
   "repertoire": true
  },
@@ -403,7 +403,7 @@
   "titel": "Inisheer",
   "artiest": "Greg Trooper (2003)",
   "key": "D",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "Irene Goodnight.html",
@@ -424,7 +424,7 @@
   "titel": "Island In The Sun",
   "artiest": "",
   "key": "C",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "It Aint Me Babe.html",
@@ -459,14 +459,14 @@
   "titel": "La Bamba",
   "artiest": "",
   "key": "C",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "Last Thing On My Mind.html",
   "titel": "Last Thing On My Mind",
   "artiest": "",
   "key": "G",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "Lay Lady Lay.html",
@@ -571,7 +571,7 @@
   "titel": "Molly Malone",
   "artiest": "",
   "key": "C",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "Morning Of My Life.html",
@@ -585,7 +585,7 @@
   "titel": "Motherland",
   "artiest": "",
   "key": "F",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "Mull Of Kintyre.html",
@@ -634,14 +634,14 @@
   "titel": "Over The Rainbow",
   "artiest": "Israel Kamakawiwoʻole (1993)",
   "key": "G",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "Prenda Del Alma.html",
   "titel": "Prenda Del Alma",
   "artiest": "",
   "key": "G",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "Raindrops Keep Fallin On My Head.html",
@@ -788,14 +788,14 @@
   "titel": "The Dutchman",
   "artiest": "Brendan Grace",
   "key": "E",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "The Fields Of Athenry.html",
   "titel": "The Fields Of Athenry",
   "artiest": "The Dubliners",
   "key": "E",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "The Irish Rover.html",
@@ -823,7 +823,7 @@
   "titel": "The Midnight Special",
   "artiest": "Creedence Clearwater Revival  1969 (Willy and the Poor Boys - Leadbelly)",
   "key": "D",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "The town I loved So Well.html",
@@ -851,7 +851,7 @@
   "titel": "The Wild Rover",
   "artiest": "",
   "key": "G",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "They Call Me The Breeze.html",
@@ -872,7 +872,7 @@
   "titel": "This Train Is Bound For Glory",
   "artiest": "",
   "key": "Eb",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "Tussen Die Liefde En Die Leegte.html",
@@ -914,7 +914,7 @@
   "titel": "Waltzing Matilda",
   "artiest": "Misc Traditional (Banjo Paterson 1895)",
   "key": "C",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "What A Wonderful World.html",
@@ -928,14 +928,14 @@
   "titel": "When Im Sixty Four",
   "artiest": "",
   "key": "C",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "Whiskey In The Jar (1967).html",
   "titel": "Whiskey In The Jar",
   "artiest": "versie The Dubliners (1967)",
   "key": "C",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "Wicked Game.html",
@@ -949,7 +949,7 @@
   "titel": "Wild Mountain Thyme",
   "artiest": "",
   "key": "G",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "Wilhelmus.html",
@@ -984,7 +984,7 @@
   "titel": "Wonderful Tonight",
   "artiest": "",
   "key": "G",
-  "repertoire": false
+  "repertoire": true
  },
  {
   "bestand": "You Aint Goin Nowhere - Byrds.html",
