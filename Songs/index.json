@@ -3,882 +3,1029 @@
   "bestand": "(Wat zullen we drinken) Zeven dagen lang .html",
   "titel": "(Wat zullen we drinken) Zeven dagen lang",
   "artiest": "",
-  "key": "Am"
+  "key": "Am",
+  "repertoire": false
  },
  {
   "bestand": "A Horse With No Name.html",
   "titel": "A Horse With No Name - America",
   "artiest": "",
-  "key": "Em"
+  "key": "Em",
+  "repertoire": false
  },
  {
   "bestand": "A Pub With No Beer.html",
   "titel": "A Pub With No Beer",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Across the Borderline.html",
   "titel": "Across the Borderline",
   "artiest": "",
-  "key": "D"
+  "key": "D",
+  "repertoire": false
  },
  {
   "bestand": "Adiós Mexico.html",
   "titel": "Adiós Mexico",
   "artiest": "Texas Tornados (1989)",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Afterglow.html",
   "titel": "Afterglow",
   "artiest": "Ed Sheeran (2020)",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Against The Wind.html",
   "titel": "Against The Wind",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Aint No Sunshine - Bill Withers.html",
   "titel": "Aint No Sunshine - Bill Withers",
   "artiest": "",
-  "key": "Am"
+  "key": "Am",
+  "repertoire": false
  },
  {
   "bestand": "All I Ever Need Is You-met startKey.html",
   "titel": "All I Ever Need Is You",
   "artiest": "Sonny and Cher",
-  "key": "C"
+  "key": "C",
+  "repertoire": false
  },
  {
   "bestand": "All Of Me.html",
   "titel": "All Of Me",
   "artiest": "",
-  "key": "F"
+  "key": "F",
+  "repertoire": false
  },
  {
   "bestand": "Allons á Lafayette - Captain Gumbo.html",
   "titel": "Allons á Lafayette",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "As Tears Go By.html",
   "titel": "As Tears Go By",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Aïcha.html",
   "titel": "Aïcha",
   "artiest": "Khaled (1996)",
-  "key": "Gm"
+  "key": "Gm",
+  "repertoire": false
  },
  {
   "bestand": "Bankers Blues.html",
   "titel": "Bankers Blues",
   "artiest": "Rory Gallagher (1973)",
-  "key": "A"
+  "key": "A",
+  "repertoire": false
  },
  {
   "bestand": "Black Girl (where did you sleep last night).html",
   "titel": "Black Girl",
   "artiest": "The Four Pennies",
-  "key": "Am"
+  "key": "Am",
+  "repertoire": false
  },
  {
   "bestand": "Black Velvet Band.html",
   "titel": "Black Velvet Band",
   "artiest": "The Dubliners",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Blackbird.html",
   "titel": "Blackbird",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Blowin' In The Wind.html",
   "titel": "Blowin' In The Wind",
   "artiest": "Bob Dylan (1963)",
-  "key": "E"
+  "key": "E",
+  "repertoire": false
  },
  {
   "bestand": "Blueberry Hill.html",
   "titel": "Blueberry Hill",
   "artiest": "Fats Domino (1956) (Sammy Kaye 1940)",
-  "key": "Bb"
+  "key": "Bb",
+  "repertoire": false
  },
  {
   "bestand": "Blues Is Blues.html",
   "titel": "Blues Is Blues",
   "artiest": "Kellie Rucker (2009)",
-  "key": "A"
+  "key": "A",
+  "repertoire": false
  },
  {
   "bestand": "Blues Run The Game.html",
   "titel": "Blues Run The Game",
   "artiest": "Jackson C. Frank",
-  "key": "C#"
+  "key": "C#",
+  "repertoire": false
  },
  {
   "bestand": "Born on the Bayou - Creedence Clearwater Revival.html",
   "titel": "Born On The Bayou",
   "artiest": "",
-  "key": "E"
+  "key": "E",
+  "repertoire": false
  },
  {
   "bestand": "Brood Voor Morgenvroeg - Bart Peeters.html",
   "titel": "Brood Voor Morgenvroeg - Bart Peeters",
-  "artiest": "",
-  "key": "Em"
+  "artiest": "Bart Peeters  (2017)",
+  "key": "F#",
+  "repertoire": false
  },
  {
   "bestand": "Buona sera Signorina Buona sera - Louis Prima.html",
   "titel": "Buona sera Signorina Buona sera - Louis Prima",
   "artiest": "",
-  "key": "D#"
+  "key": "D#",
+  "repertoire": false
  },
  {
   "bestand": "Bury Me Under The Weeping Willow-Chris Thiele.html",
   "titel": "Bury Me Beneath The Willow (A.P.Carter)- Chris Thiele",
   "artiest": "",
-  "key": "A"
+  "key": "A",
+  "repertoire": false
  },
  {
   "bestand": "Carrickfergus.html",
   "titel": "Carrickfergus",
   "artiest": "",
-  "key": "Am"
+  "key": "Am",
+  "repertoire": false
  },
  {
   "bestand": "Child In Time.html",
   "titel": "Child In Time",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Closing Time - Semisonic.html",
   "titel": "Closing Time - Semisonic",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Coat Of Many Colors.html",
   "titel": "Coat Of Many Colors",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Cotton Fields.html",
-  "titel": "COTTON FIELDS",
+  "titel": "Cotton Fields",
   "artiest": "Creedence Clearwater Revival (1969)",
-  "key": "A"
+  "key": "A",
+  "repertoire": false
  },
  {
   "bestand": "Cry Me A River Chordify.html",
   "titel": "Cry Me A River Chordify",
   "artiest": "",
-  "key": "Em"
+  "key": "Em",
+  "repertoire": false
  },
  {
   "bestand": "De Monniken.html",
   "titel": "De Monniken",
   "artiest": "",
-  "key": "C"
+  "key": "C",
+  "repertoire": false
  },
  {
   "bestand": "De Vondeling Van Ameland.html",
   "titel": "De Vondeling Van Ameland",
   "artiest": "",
-  "key": "Em"
+  "key": "Em",
+  "repertoire": false
  },
  {
   "bestand": "Dear Ann.html",
   "titel": "DEAR ANN",
   "artiest": "George Baker Selection (1970)",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Dirty Old Town (met video).html",
   "titel": "Dirty Old Town",
   "artiest": "The Pogues",
-  "key": "D"
+  "key": "D",
+  "repertoire": false
  },
  {
   "bestand": "Dont Stand So Close To Me.html",
   "titel": "Dont Stand So Close To Me",
   "artiest": "",
-  "key": "Eb"
+  "key": "Eb",
+  "repertoire": false
  },
  {
   "bestand": "Dont Think Twice Its All Right.html",
   "titel": "Dont Think Twice Its All Right",
   "artiest": "",
-  "key": "C"
+  "key": "C",
+  "repertoire": false
  },
  {
   "bestand": "Down By The Salley Gardens.html",
   "titel": "Down By The Salley Gardens",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Drivin' My Life Away.html",
   "titel": "Drivin' My Life Away",
   "artiest": "",
-  "key": "E"
+  "key": "E",
+  "repertoire": false
  },
  {
   "bestand": "Du.html",
   "titel": "Du",
   "artiest": "",
-  "key": "E"
+  "key": "E",
+  "repertoire": false
  },
  {
   "bestand": "Follow The Sun.html",
   "titel": "Follow The Sun",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Get Back.html",
   "titel": "Get Back",
   "artiest": "",
-  "key": "A"
+  "key": "A",
+  "repertoire": false
  },
  {
   "bestand": "Go Your Own Way.html",
   "titel": "Go Your Own Way",
   "artiest": "",
-  "key": "F"
+  "key": "F",
+  "repertoire": false
  },
  {
   "bestand": "Good Night Irene.html",
   "titel": "Good Night Irene",
   "artiest": "",
-  "key": "E"
+  "key": "E",
+  "repertoire": false
  },
  {
   "bestand": "Good Times.html",
   "titel": "Good Times",
   "artiest": "",
-  "key": "A"
+  "key": "A",
+  "repertoire": false
  },
  {
   "bestand": "Guantanamera.html",
   "titel": "Guantanamera",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Hard Times Come Again No More.html",
   "titel": "Hard Times Come Again No More",
   "artiest": "",
-  "key": "D"
+  "key": "D",
+  "repertoire": true
  },
  {
   "bestand": "Heart Of Gold.html",
   "titel": "Heart Of Gold",
   "artiest": "",
-  "key": "Em"
+  "key": "Em",
+  "repertoire": false
  },
  {
   "bestand": "Heaven Only Knows.html",
   "titel": "Heaven Only Knows",
   "artiest": "",
-  "key": "C"
+  "key": "C",
+  "repertoire": false
  },
  {
   "bestand": "Hee Gaode Mee.html",
   "titel": "Hee Gaode Mee",
   "artiest": "Gerard van Maasakkers (versie van video onderaan)",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Help.html",
   "titel": "Help",
   "artiest": "",
-  "key": "A"
+  "key": "A",
+  "repertoire": false
  },
  {
   "bestand": "Hound Dog - Etta James.html",
   "titel": "Hound Dog",
   "artiest": "Etta James",
-  "key": "D"
+  "key": "D",
+  "repertoire": false
  },
  {
   "bestand": "House Of The Rising Sun.html",
   "titel": "House Of The Rising Sun",
   "artiest": "",
-  "key": "Am"
+  "key": "Am",
+  "repertoire": false
  },
  {
   "bestand": "I Am Sailing.html",
   "titel": "I Am Sailing",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "I Can Help.html",
   "titel": "I Can Help",
   "artiest": "",
-  "key": "C"
+  "key": "C",
+  "repertoire": false
  },
  {
   "bestand": "I Shot The Sheriff.html",
   "titel": "I Shot The Sheriff",
   "artiest": "",
-  "key": "Gm"
+  "key": "Gm",
+  "repertoire": false
  },
  {
   "bestand": "In The Summertime.html",
   "titel": "In The Summertime",
   "artiest": "",
-  "key": "E"
+  "key": "E",
+  "repertoire": false
  },
  {
   "bestand": "Inisheer.html",
   "titel": "Inisheer",
   "artiest": "Greg Trooper (2003)",
-  "key": "D"
+  "key": "D",
+  "repertoire": false
  },
  {
   "bestand": "Irene Goodnight.html",
   "titel": "Irene Goodnight",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Iris - Goo Goo Dolls.html",
   "titel": "Iris - Goo Goo Dolls",
   "artiest": "",
-  "key": "Bm"
+  "key": "Bm",
+  "repertoire": false
  },
  {
   "bestand": "Island In The Sun - Dolly Parton & Kenny Rogers.html",
   "titel": "Island In The Sun",
   "artiest": "",
-  "key": "C"
+  "key": "C",
+  "repertoire": false
  },
  {
   "bestand": "It Aint Me Babe.html",
   "titel": "It Aint Me Babe",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Je t'Aime Moi Non Plus.html",
   "titel": "Je t'Aime Moi Non Plus",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Just A Song Before I Go.html",
   "titel": "Just A Song Before I Go",
   "artiest": "",
-  "key": "F#m"
+  "key": "F#m",
+  "repertoire": false
  },
  {
   "bestand": "Kayleigh.html",
   "titel": "Kayleigh",
   "artiest": "Marillion (1985)",
-  "key": "D"
+  "key": "D",
+  "repertoire": false
  },
  {
   "bestand": "La Bamba.html",
   "titel": "La Bamba",
   "artiest": "",
-  "key": "C"
+  "key": "C",
+  "repertoire": false
  },
  {
   "bestand": "Last Thing On My Mind.html",
   "titel": "Last Thing On My Mind",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Lay Lady Lay.html",
   "titel": "Lay Lady Lay",
   "artiest": "",
-  "key": "A"
+  "key": "A",
+  "repertoire": false
  },
  {
   "bestand": "Layla.html",
   "titel": "Layla",
   "artiest": "",
-  "key": "Dm"
+  "key": "Dm",
+  "repertoire": false
  },
  {
   "bestand": "Lemon Tree.html",
   "titel": "Lemon Tree",
   "artiest": "Fool's Garden (1995)",
-  "key": "Fm"
+  "key": "Fm",
+  "repertoire": false
  },
  {
   "bestand": "Let it Be.html",
   "titel": "LET IT BE",
   "artiest": "The Beatles (1970)",
-  "key": "C"
+  "key": "C",
+  "repertoire": false
  },
  {
   "bestand": "Little Lion Man.html",
   "titel": "Little Lion Man",
   "artiest": "",
-  "key": "Dm"
+  "key": "Dm",
+  "repertoire": false
  },
  {
   "bestand": "Living Next Door To Alice.html",
   "titel": "Living Next Door To Alice",
   "artiest": "",
-  "key": "A"
+  "key": "A",
+  "repertoire": false
  },
  {
   "bestand": "Lola.html",
   "titel": "Lola",
   "artiest": "",
-  "key": "E"
+  "key": "E",
+  "repertoire": false
  },
  {
   "bestand": "Long As I Can See The Light.html",
   "titel": "Long As I Can See The Light",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Long May You Run.html",
   "titel": "Long May You Run",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Losing My Religion.html",
   "titel": "Loosing My Religion",
   "artiest": "",
-  "key": "F"
+  "key": "F",
+  "repertoire": false
  },
  {
   "bestand": "Lost.html",
   "titel": "Lost",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Luna Luna Mijn.html",
   "titel": "Luna Luna Mijn",
   "artiest": "",
-  "key": "C"
+  "key": "C",
+  "repertoire": true
  },
  {
   "bestand": "Make Me Smile.html",
   "titel": "Make Me Smile",
   "artiest": "",
-  "key": "F"
+  "key": "F",
+  "repertoire": false
  },
  {
   "bestand": "Message In A Bottle.html",
   "titel": "Message In A Bottle",
   "artiest": "",
-  "key": "F#m"
+  "key": "F#m",
+  "repertoire": false
  },
  {
   "bestand": "Molly Malone.html",
   "titel": "Molly Malone",
   "artiest": "",
-  "key": "C"
+  "key": "C",
+  "repertoire": false
  },
  {
   "bestand": "Morning Of My Life.html",
   "titel": "Morning Of My Life",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Motherland.html",
   "titel": "Motherland",
   "artiest": "",
-  "key": "F"
+  "key": "F",
+  "repertoire": false
  },
  {
   "bestand": "Mull Of Kintyre.html",
   "titel": "Mull Of Kintyre",
   "artiest": "",
-  "key": "A"
+  "key": "A",
+  "repertoire": false
  },
  {
   "bestand": "Nobody Knows You When You’re Down And Out.html",
   "titel": "Nobody Knows You When You’re Down And Out",
   "artiest": "Eric Clapton (Unplugged 1992)",
-  "key": "C"
+  "key": "C",
+  "repertoire": false
  },
  {
   "bestand": "Only Love Can  Break Your Heart.html",
   "titel": "Only Love Can Break Your Heart",
   "artiest": "",
-  "key": "A"
+  "key": "A",
+  "repertoire": false
  },
  {
   "bestand": "Only Wanna Be With You.html",
   "titel": "Only Wanna Be With You",
   "artiest": "",
-  "key": "D"
+  "key": "D",
+  "repertoire": false
  },
  {
   "bestand": "Op De Laatste Donderdag (L42).html",
   "titel": "Op De Laatste Donderdag (L42)",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Our House.html",
   "titel": "Our House",
   "artiest": "",
-  "key": "A"
+  "key": "A",
+  "repertoire": false
  },
  {
   "bestand": "Over The Rainbow.html",
   "titel": "Over The Rainbow",
   "artiest": "Israel Kamakawiwoʻole (1993)",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Prenda Del Alma.html",
   "titel": "Prenda Del Alma",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Raindrops Keep Fallin On My Head.html",
   "titel": "Raindrops Keep Fallin On My Head",
   "artiest": "",
-  "key": "F"
+  "key": "F",
+  "repertoire": false
  },
  {
   "bestand": "Reborn Again - Adri S.html",
   "titel": "Reborn Again",
   "artiest": "",
-  "key": "A"
+  "key": "A",
+  "repertoire": false
  },
  {
   "bestand": "Sally Brown.html",
   "titel": "Sally Brown",
   "artiest": "",
-  "key": "C"
+  "key": "C",
+  "repertoire": false
  },
  {
   "bestand": "San Francisco Bay Blues.html",
   "titel": "San Francisco Bay Blues",
   "artiest": "Eric Clapton",
-  "key": "C"
+  "key": "C",
+  "repertoire": false
  },
  {
   "bestand": "Save Tonight.html",
   "titel": "Save Tonight",
   "artiest": "",
-  "key": "A"
+  "key": "A",
+  "repertoire": false
  },
  {
   "bestand": "Set Fire to the Rain - Adele.html",
   "titel": "Set Fire To The Rain",
   "artiest": "",
-  "key": "Am"
+  "key": "Am",
+  "repertoire": false
  },
  {
   "bestand": "Seven Drunken Nights.html",
   "titel": "Seven Drunken Nights",
   "artiest": "The Dubliners",
-  "key": "A"
+  "key": "A",
+  "repertoire": false
  },
  {
   "bestand": "She Goes Nana.html",
   "titel": "She Goes Nana",
   "artiest": "The Radios (1991)",
-  "key": "C"
+  "key": "C",
+  "repertoire": false
  },
  {
   "bestand": "Smooth Operator.html",
   "titel": "Smooth Operator",
   "artiest": "",
-  "key": "Dm"
+  "key": "Dm",
+  "repertoire": false
  },
  {
   "bestand": "Someone Like You.html",
   "titel": "Someone Like You",
   "artiest": "",
-  "key": "A"
+  "key": "A",
+  "repertoire": false
  },
  {
   "bestand": "Somewhere Between Your Heart And Mine.html",
   "titel": "Somewhere Between Your Heart And Mine",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Sous Le Ciel De Paris (Piaf).html",
   "titel": "Sous Le Ciel De Paris",
   "artiest": "Édith Piaf",
-  "key": "E"
+  "key": "E",
+  "repertoire": false
  },
  {
   "bestand": "Spill The Wine.html",
   "titel": "Spill The Wine",
   "artiest": "",
-  "key": "F"
+  "key": "F",
+  "repertoire": false
  },
  {
   "bestand": "Stand By Your Man.html",
   "titel": "Stand By Your Man",
   "artiest": "Tammy Wynette",
-  "key": "A"
+  "key": "A",
+  "repertoire": false
  },
  {
   "bestand": "Star Of The County Down.html",
   "titel": "Star Of The County Down",
   "artiest": "The Irish Rovers",
-  "key": "E"
+  "key": "E",
+  "repertoire": false
  },
  {
   "bestand": "Steal Away.html",
   "titel": "Steal Away",
   "artiest": "The Fureys (1983)",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Take This Waltz.html",
   "titel": "Take This Waltz",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Tequila.html",
   "titel": "Tequila",
   "artiest": "",
-  "key": "E"
+  "key": "E",
+  "repertoire": false
  },
  {
   "bestand": "The Boxer.html",
   "titel": "THE BOXER",
   "artiest": "Simon & Garfunkel (1969)",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "The Cave.html",
   "titel": "The Cave",
   "artiest": "Mumford & Sons",
-  "key": "E"
+  "key": "E",
+  "repertoire": false
  },
  {
   "bestand": "The Dutchman.html",
   "titel": "The Dutchman",
   "artiest": "Brendan Grace",
-  "key": "E"
+  "key": "E",
+  "repertoire": false
  },
  {
   "bestand": "The Fields Of Athenry.html",
   "titel": "The Fields Of Athenry",
   "artiest": "The Dubliners",
-  "key": "E"
+  "key": "E",
+  "repertoire": false
  },
  {
   "bestand": "The Irish Rover.html",
   "titel": "The Irish Rover",
   "artiest": "The Pogues feat. The Dubliners",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "The Joker.html",
   "titel": "The Joker",
   "artiest": "Steve Miller Band (1973)",
-  "key": "F"
+  "key": "F",
+  "repertoire": false
  },
  {
   "bestand": "The Leaving Of Liverpool.html",
   "titel": "The Leaving Of Liverpool",
   "artiest": "The Dubliners",
-  "key": "A"
+  "key": "A",
+  "repertoire": false
  },
  {
   "bestand": "The Midnight Special.html",
   "titel": "The Midnight Special",
   "artiest": "Creedence Clearwater Revival  1969 (Willy and the Poor Boys - Leadbelly)",
-  "key": "D"
+  "key": "D",
+  "repertoire": false
  },
  {
   "bestand": "The town I loved So Well.html",
   "titel": "The Town I loved So Well",
   "artiest": "",
-  "key": "Bb"
+  "key": "Bb",
+  "repertoire": false
  },
  {
   "bestand": "The Visitor.html",
   "titel": "The Visitor",
   "artiest": "",
-  "key": "A"
+  "key": "A",
+  "repertoire": false
  },
  {
   "bestand": "The Weight.html",
   "titel": "The Weight",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "The Wild Rover.html",
   "titel": "The Wild Rover",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "They Call Me The Breeze.html",
   "titel": "They Call Me The Breeze",
   "artiest": "J. J. Cale (1972)",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "This Strange Effect.html",
   "titel": "This Strange Effect",
   "artiest": "",
-  "key": "Em"
+  "key": "Em",
+  "repertoire": false
  },
  {
   "bestand": "This Train Is Bound For Glory.html",
   "titel": "This Train Is Bound For Glory",
   "artiest": "",
-  "key": "Eb"
+  "key": "Eb",
+  "repertoire": false
  },
  {
   "bestand": "Tussen Die Liefde En Die Leegte.html",
   "titel": "Tussen Die Liefde En Die Leegte",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Une belle histoire - Michel Fugain.html",
   "titel": "Une Belle Histoire",
   "artiest": "",
-  "key": "Am"
+  "key": "Am",
+  "repertoire": false
  },
  {
   "bestand": "Venus.html",
   "titel": "Venus",
   "artiest": "Shocking Blue (1969)",
-  "key": "E"
+  "key": "E",
+  "repertoire": false
  },
  {
   "bestand": "Wake Me Up.html",
   "titel": "Wake Me Up",
   "artiest": "",
-  "key": "Bm"
+  "key": "Bm",
+  "repertoire": false
  },
  {
   "bestand": "Walk On The Wild Side.html",
   "titel": "Walk On The Wild Side",
   "artiest": "",
-  "key": "C"
+  "key": "C",
+  "repertoire": false
  },
  {
   "bestand": "Waltzing Matilda.html",
   "titel": "Waltzing Matilda",
   "artiest": "Misc Traditional (Banjo Paterson 1895)",
-  "key": "C"
+  "key": "C",
+  "repertoire": false
  },
  {
   "bestand": "What A Wonderful World.html",
   "titel": "What A Wonderful World",
   "artiest": "",
-  "key": "F"
+  "key": "F",
+  "repertoire": true
  },
  {
   "bestand": "When Im Sixty Four.html",
   "titel": "When Im Sixty Four",
   "artiest": "",
-  "key": "C"
+  "key": "C",
+  "repertoire": false
  },
  {
   "bestand": "Whiskey In The Jar (1967).html",
   "titel": "Whiskey In The Jar",
   "artiest": "versie The Dubliners (1967)",
-  "key": "C"
+  "key": "C",
+  "repertoire": false
  },
  {
   "bestand": "Wicked Game.html",
   "titel": "Wicked Game",
   "artiest": "",
-  "key": "Bm"
+  "key": "Bm",
+  "repertoire": false
  },
  {
   "bestand": "Wild Mountain Thyme.html",
   "titel": "Wild Mountain Thyme",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Wilhelmus.html",
   "titel": "Wilhelmus",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "WILLIN'.html",
   "titel": "WILLIN'",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "Witte Rozen.html",
   "titel": "Witte Rozen",
   "artiest": "",
-  "key": "F"
+  "key": "F",
+  "repertoire": false
  },
  {
   "bestand": "Wonderful Life.html",
   "titel": "Wonderful Life",
   "artiest": "",
-  "key": "Gm"
+  "key": "Gm",
+  "repertoire": false
  },
  {
   "bestand": "Wonderful Tonight.html",
   "titel": "Wonderful Tonight",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "You Aint Goin Nowhere - Byrds.html",
   "titel": "You Aint Goin Nowhere",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "You Couldn't Have Come On A Better Time.html",
   "titel": "You Couldn't Have Come On A Better Time",
   "artiest": "Luka Bloom",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  },
  {
   "bestand": "You've Got A Friend.html",
   "titel": "You've Got A Friend",
   "artiest": "",
-  "key": "E"
+  "key": "E",
+  "repertoire": false
  },
  {
   "bestand": "Zombie.html",
   "titel": "Zombie",
   "artiest": "",
-  "key": "Em"
+  "key": "Em",
+  "repertoire": false
  },
  {
   "bestand": "Zoutelande.html",
   "titel": "Zoutelande",
   "artiest": "",
-  "key": "Em"
+  "key": "Em",
+  "repertoire": false
  },
  {
   "bestand": "Ça Va Pas Changer Le Monde.html",
   "titel": "Ça Va Pas Changer Le Monde",
   "artiest": "",
-  "key": "G"
+  "key": "G",
+  "repertoire": false
  }
 ]
