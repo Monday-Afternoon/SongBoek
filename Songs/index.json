@@ -308,18 +308,18 @@
   "repertoire": false
  },
  {
-  "bestand": "Good Night Irene.html",
-  "titel": "Good Night Irene",
-  "artiest": "",
-  "key": "E",
-  "repertoire": true
- },
- {
   "bestand": "Good Times.html",
   "titel": "Good Times",
   "artiest": "",
   "key": "A",
   "repertoire": false
+ },
+ {
+  "bestand": "Goodnight Irene.html",
+  "titel": "Goodnight Irene",
+  "artiest": "",
+  "key": "E",
+  "repertoire": true
  },
  {
   "bestand": "Guantanamera.html",
@@ -411,13 +411,6 @@
   "artiest": "Greg Trooper (2003)",
   "key": "D",
   "repertoire": true
- },
- {
-  "bestand": "Irene Goodnight.html",
-  "titel": "Irene Goodnight",
-  "artiest": "",
-  "key": "G",
-  "repertoire": false
  },
  {
   "bestand": "Iris - Goo Goo Dolls.html",
@@ -646,7 +639,7 @@
  {
   "bestand": "Prenda Del Alma.html",
   "titel": "Prenda Del Alma",
-  "artiest": "",
+  "artiest": "Los Lobos (1987)",
   "key": "G",
   "repertoire": true
  },
