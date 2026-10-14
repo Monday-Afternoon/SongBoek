@@ -34,6 +34,10 @@ input[type=search]{width:100%;padding:11px 12px;font:inherit;border:1px solid va
 .kop h1{margin:.3em 0}
 .balk{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:8px 0;background:var(--bg)}
 .balk .los{color:var(--muted);font-size:.9rem}
+.geluid{flex-basis:100%;display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.geluid audio{flex:1;min-width:200px}
+audio[hidden]{display:none}
+button.noten{font:inherit;background:transparent;cursor:pointer}
 .scan,.pdfpagina{display:block;width:100%;height:auto;background:#fff;margin:0 0 8px}
 .video{aspect-ratio:16/9;width:100%;max-width:560px;border:0;border-radius:6px;background:#000;margin:6px 0 4px}
 .tekst{margin-top:14px}
@@ -83,7 +87,8 @@ function parseSong(tekst) {
       const i = d.indexOf(':'); if (i <= 0) return;
       const naam = d.slice(0,i).trim(), waarde = d.slice(i+1).trim();
       meta[naam.toLowerCase()] = waarde;
-      if (/\.(pdf|jpe?g|png|gif|webp)$/i.test(waarde)) bestanden.push([naam, waarde]);
+      const sp = splitsBestanden(waarde);
+      if (sp.visueel || sp.geluiden.length) bestanden.push([naam, waarde]);
     });
     return '';
   });
@@ -124,6 +129,23 @@ function youtubeId(u) {
   return m ? m[1] : u.trim();
 }
 
+const VISUEEL = /\.(pdf|jpe?g|png|gif|webp)$/i, GELUID = /\.(mp3|m4a|ogg|wav)$/i;
+// Een <meta>-waarde mag een notenbeeld en/of meerdere geluidsfragmenten bevatten, gescheiden door |
+// Voorbeeld: A.jpg|Piano=tenor1.mp3|Zang=tenor2.mp3  (de naam voor het = is het opschrift van de knop)
+function splitsBestanden(w) {
+  const delen = (w || '').split('|').map(x => x.trim()).filter(Boolean);
+  const geluiden = [];
+  let visueel = '';
+  for (const d of delen) {
+    const i = d.indexOf('=');
+    const naam = i > 0 ? d.slice(0, i).trim() : '';
+    const bestand = i > 0 ? d.slice(i + 1).trim() : d;
+    if (GELUID.test(bestand)) geluiden.push({label: naam || bestand.replace(/\.[^.]+$/, ''), bestand});
+    else if (!visueel && VISUEEL.test(bestand)) visueel = bestand;
+  }
+  return {visueel, geluiden};
+}
+let huidigGeluid = null;   // geluidsspeler die nu in beeld is; stopt als je de pagina verlaat
 const toestand = {};   // onthoudt key en capo per song tijdens het bezoek
 const PDFJS = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/';
 let terugNaar = '#';   // waar de terug-link van een song heen gaat (overzicht of repertoire)
@@ -201,15 +223,36 @@ async function toonPdf(url, doel) {
   }
 }
 
-// Notenbeeld of zanglijn in de pagina zelf tonen, met een terug-knop naar de song
-async function toonBestand(songBestand, bestand, label) {
+// Notenbeeld en/of geluid in de pagina zelf tonen, met een terug-knop naar de song
+async function toonBestand(songBestand, waarde, label) {
   const map = await songsMap();
-  const url = map + '/' + encodeURIComponent(bestand);
+  const {visueel, geluiden} = splitsBestanden(waarde);
+  const pad = f => map + '/' + encodeURIComponent(f);
+  const naamKnop = g => geluiden.length > 1 ? esc(g.label) : 'Beluister';
   document.title = label + ' – Songboek';
-  app.innerHTML = `<div class="balk"><a class="noten" href="#/${encodeURIComponent(songBestand)}">‹ Terug naar de song</a><span class="info">${esc(label)}</span><a class="los" href="${url}" target="_blank" rel="noopener">Los openen</a></div><div id="inhoud"></div>`;
+  app.innerHTML = `<div class="balk"><a class="noten" href="#/${encodeURIComponent(songBestand)}">‹ Terug naar de song</a><span class="info">${esc(label)}</span><a class="los" href="${pad(visueel || geluiden[0].bestand)}" target="_blank" rel="noopener">Los openen</a>` +
+    (geluiden.length ? `<div class="geluid">${geluiden.map((g, i) => `<button class="noten" id="speel${i}" type="button">▶ ${naamKnop(g)}</button>`).join('')}<label class="info"><input type="checkbox" id="herhaal"> Herhaal</label><audio id="speler" controls preload="none" hidden></audio></div>` : '') +
+    `</div><div id="inhoud"></div>`;
+  if (geluiden.length) {
+    const speler = document.getElementById('speler');
+    const knoppen = geluiden.map((g, i) => document.getElementById('speel' + i));
+    let actief = -1;
+    huidigGeluid = speler;
+    const zet = () => geluiden.forEach((g, i) => { knoppen[i].textContent = (actief === i && !speler.paused ? '⏸ ' : '▶ ') + naamKnop(g).replace(/&amp;/g, '&'); });
+    knoppen.forEach((k, i) => k.addEventListener('click', () => {
+      speler.hidden = false;
+      if (actief !== i) { actief = i; speler.src = pad(geluiden[i].bestand); speler.play().catch(() => {}); }
+      else if (speler.paused) speler.play().catch(() => {});
+      else speler.pause();
+      zet();
+    }));
+    ['play', 'pause', 'ended'].forEach(n => speler.addEventListener(n, zet));
+    document.getElementById('herhaal').addEventListener('change', e => { speler.loop = e.target.checked; });
+  }
   const inhoud = document.getElementById('inhoud');
-  if (/\.pdf$/i.test(bestand)) await toonPdf(url, inhoud);
-  else inhoud.innerHTML = `<img class="scan" src="${url}" alt="${esc(label)}">`;
+  if (!visueel) inhoud.innerHTML = '<p class="info">Bij deze knop hoort alleen geluid.</p>';
+  else if (/\.pdf$/i.test(visueel)) await toonPdf(pad(visueel), inhoud);
+  else inhoud.innerHTML = `<img class="scan" src="${pad(visueel)}" alt="${esc(label)}">`;
 }
 
 async function toonSong(bestand) {
@@ -292,6 +335,7 @@ async function toonSong(bestand) {
 }
 
 function route() {
+  if (huidigGeluid) { huidigGeluid.pause(); huidigGeluid = null; }
   if (location.hash === '#repertoire') toonOverzicht(true);
   else if (location.hash.startsWith('#bekijk/')) {
     const d = location.hash.slice(1).split('/').map(decodeURIComponent);
