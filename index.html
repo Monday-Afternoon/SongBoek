@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Songboek</title>
+<script src="instellingen.js"></script>
 <style>
 :root{--bg:#f3f5f7;--fg:#1b2430;--muted:#6b7683;--chord:#0a5c8f;--card:#fff;--line:#d9dfe5}
 @media(prefers-color-scheme:dark){:root{--bg:#12161b;--fg:#e6ebf0;--muted:#8d98a5;--chord:#6cc0f0;--card:#1b2129;--line:#2c353f}}
@@ -146,6 +147,8 @@ function splitsBestanden(w) {
   return {visueel, geluiden};
 }
 let huidigGeluid = null;   // geluidsspeler die nu in beeld is; stopt als je de pagina verlaat
+// Titel van de site: staat in instellingen.js, zodat een nieuwe index.html die niet overschrijft
+const INST = Object.assign({titel: 'Songboek', tabbladTitel: 'Songboek'}, window.INSTELLINGEN || {});
 const toestand = {};   // onthoudt key en capo per song tijdens het bezoek
 const PDFJS = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/';
 let terugNaar = '#';   // waar de terug-link van een song heen gaat (overzicht of repertoire)
@@ -165,10 +168,10 @@ function songsMap() {
 
 async function toonOverzicht(rep = false) {
   terugNaar = rep ? '#repertoire' : '#';
-  document.title = rep ? 'Ons repertoire – Songboek' : 'Songboek';
+  document.title = rep ? 'Ons repertoire – ' + INST.tabbladTitel : INST.tabbladTitel;
   app.innerHTML = (rep
     ? '<a class="terug" href="#">‹ Alle songs</a><div class="kop"><h1>In ons repertoire</h1></div>'
-    : '<div class="kop"><h1>Songboek</h1><a class="noten" href="#repertoire">★ In ons repertoire</a></div>') + '<input type="search" id="zoek" placeholder="Zoek op titel of artiest" aria-label="Zoeken"><div class="lijst' + (rep ? ' compact' : '') + '" id="lijst"></div>';
+    : '<div class="kop"><h1>' + esc(INST.titel) + '</h1><a class="noten" href="#repertoire">★ In ons repertoire</a></div>') + '<input type="search" id="zoek" placeholder="Zoek op titel of artiest" aria-label="Zoeken"><div class="lijst' + (rep ? ' compact' : '') + '" id="lijst"></div>';
   let songs;
   try {
     const r = await fetch((await songsMap()) + '/index.json', {cache:'no-cache'});
@@ -229,7 +232,7 @@ async function toonBestand(songBestand, waarde, label) {
   const {visueel, geluiden} = splitsBestanden(waarde);
   const pad = f => map + '/' + encodeURIComponent(f);
   const naamKnop = g => geluiden.length > 1 ? esc(g.label) : 'Beluister';
-  document.title = label + ' – Songboek';
+  document.title = label + ' – ' + INST.tabbladTitel;
   app.innerHTML = `<div class="balk"><a class="noten" href="#/${encodeURIComponent(songBestand)}">‹ Terug naar de song</a><span class="info">${esc(label)}</span><a class="los" href="${pad(visueel || geluiden[0].bestand)}" target="_blank" rel="noopener">Los openen</a>` +
     (geluiden.length ? `<div class="geluid">${geluiden.map((g, i) => `<button class="noten" id="speel${i}" type="button">▶ ${naamKnop(g)}</button>`).join('')}<label class="info"><input type="checkbox" id="herhaal"> Herhaal</label><audio id="speler" controls preload="none" hidden></audio></div>` : '') +
     `</div><div id="inhoud"></div>`;
@@ -268,14 +271,20 @@ async function toonSong(bestand) {
     return;
   }
   const titel = song.meta.titel || bestand.replace(/\.html$/i, '');
-  document.title = titel + ' – Songboek';
+  document.title = titel + ' – ' + INST.tabbladTitel;
   const km = song.key.match(/^([A-G][#b]?)(m?)/);
   const origIdx = km ? idx(km[1]) : -1;
   const mineur = km ? km[2] === 'm' : false;
   const capoStart = capoUitTekst(song.capo);
+  // afspraak in <meta> (bijv. afspraak: A2, C0): een knop die key en capo meteen op de afgesproken stand zet
+  const afspraken = (song.meta.afspraak || '').split(',').map(x => x.trim()).filter(Boolean).map(x => {
+    const m = (x[0].toUpperCase() + x.slice(1)).match(/^([A-G][#b]?)m?\s*(?:capo)?\s*(\d{1,2})?$/);
+    return m && idx(m[1]) >= 0 ? {tekst: x, idx: idx(m[1]), capo: m[2] ? Number(m[2]) : 0} : null;
+  }).filter(Boolean);
   // startKey in <meta> (bijv. startKey: Bb): de song opent meteen in die klinkende key
   const sk = (song.meta.startkey || '').match(/^([A-G][#b]?)/);
   let stap = (sk && origIdx >= 0 && idx(sk[1]) >= 0) ? (idx(sk[1]) - origIdx + 12) % 12 : 0;
+  const startStap = stap;
   let capo = capoStart;
   const bewaard = toestand[bestand];
   if (bewaard) { stap = bewaard.stap; capo = bewaard.capo; }
@@ -312,7 +321,10 @@ async function toonSong(bestand) {
         '<button data-s="-1" aria-label="Halve toon lager">−</button><button data-s="1" aria-label="Halve toon hoger">+</button><span class="sp"></span>' +
         KNOPPEN.map(k => `<button data-k="${idx(k)}" class="${idx(k) === doel ? 'aan' : ''}">${k}${mineur ? 'm' : ''}</button>`).join('') +
         '<span style="flex-basis:100%;height:0"></span><span class="info">Capo:</span>' +
-        Array.from({length: Math.max(8, capoStart + 1)}, (_, c) => c).map(c => `<button data-c="${c}" class="${c === capo ? 'aan' : ''}">${c || 'geen'}</button>`).join('');
+        Array.from({length: Math.max(8, capoStart + 1, ...afspraken.map(a => a.capo + 1))}, (_, c) => c).map(c => `<button data-c="${c}" class="${c === capo ? 'aan' : ''}">${c || 'geen'}</button>`).join('') +
+        (afspraken.length ? '<span style="flex-basis:100%;height:0"></span><span class="info">Afspraak:</span>' +
+          afspraken.map((a, i) => `<button data-a="${i}" class="${doel === a.idx && capo === a.capo ? 'aan' : ''}">${esc(a.tekst)}</button>`).join('') +
+          '<button data-a="reset">↺ Zoals video</button>' : '');
     }
     document.getElementById('tekst').innerHTML = song.regels.map(r => {
       if (r.t === 'leeg') return '<div class="leeg"></div>';
@@ -325,7 +337,11 @@ async function toonSong(bestand) {
   }
   document.getElementById('bedien').addEventListener('click', e => {
     const b = e.target.closest('button'); if (!b) return;
-    if (b.dataset.c !== undefined) capo = Number(b.dataset.c);
+    if (b.dataset.a !== undefined) {
+      if (b.dataset.a === 'reset') { stap = startStap; capo = capoStart; }
+      else { const a = afspraken[Number(b.dataset.a)]; stap = (a.idx - origIdx + 12) % 12; capo = a.capo; }
+    }
+    else if (b.dataset.c !== undefined) capo = Number(b.dataset.c);
     else if (b.dataset.s) stap = (stap + Number(b.dataset.s) + 12) % 12;
     else stap = (Number(b.dataset.k) - origIdx + 12) % 12;
     toestand[bestand] = {stap, capo};
