@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Songboek</title>
+<link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;🎵&lt;/text&gt;&lt;/svg&gt;">
 <script src="instellingen.js"></script>
 <style>
 :root{--bg:#f3f5f7;--fg:#1b2430;--muted:#6b7683;--chord:#0a5c8f;--card:#fff;--line:#d9dfe5}
@@ -263,7 +264,7 @@ async function toonSong(bestand) {
   const map = await songsMap();
   let song;
   try {
-    const r = await fetch(map + '/' + encodeURIComponent(bestand));
+    const r = await fetch(map + '/' + encodeURIComponent(bestand), {cache:'no-cache'});
     if (!r.ok) throw new Error(r.status);
     song = parseSong(await r.text());
   } catch (e) {
