@@ -16,8 +16,12 @@ for f in sorted(map_songs.glob("*.html")):
                 k, v = deel.split(":", 1)
                 meta[k.strip().lower()] = v.strip()
     rest = tekst[m.end():] if m else tekst
-    kopregel = next((r.strip() for r in rest.splitlines() if r.strip()), "")
-    artiest = kopregel.split(" - ", 1)[1] if " - " in kopregel else ""
+    kopregel = next((r.strip() for r in rest.splitlines()
+                     if r.strip() and not r.strip().lower().startswith(("<key>", "capo"))), "")
+    # artiest: eerst het veld 'artiest:' in <meta>, anders het deel na het streepje in de kopregel
+    # (werkt met - en met de langere streepjes – en —)
+    delen = re.split(r"\s+-\s+|\s*[–—]\s*", kopregel, maxsplit=1)
+    artiest = meta.get("artiest") or (delen[1] if len(delen) > 1 else "")
     k = re.search(r"<key>\{?([^<}]*)\}?</key>", tekst, re.I)
     items.append({
         "bestand": f.name,

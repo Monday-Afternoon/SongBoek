@@ -101,8 +101,8 @@ function parseSong(tekst) {
   for (const raw of tekst.split(/\r?\n/)) {
     const r = raw.trim();
     if (!r) { if (regels.length && regels[regels.length-1].t !== 'leeg') regels.push({t:'leeg'}); continue; }
-    if (!kop) { kop = r; continue; }
     if (/^capo\b/i.test(r)) { capo = r; continue; }
+    if (!kop) { kop = r; continue; }
     let m;
     if ((m = r.match(/^<b>(.*)<\/b>$/i))) { regels.push({t:'sec', tekst:m[1].trim()}); continue; }
     if ((m = r.match(/^\{(.+)\}$/))) { regels.push({t:'akk', akkoorden:m[1].trim().split(/\s+/)}); continue; }
@@ -123,6 +123,12 @@ function capoUitTekst(s) {
   if (m) return Math.min(parseInt(m[0], 10), 11);
   const r = s.match(/\b(XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)\b/);
   return r ? Math.min(ROMEINS[r[1]], 11) : 0;
+}
+
+// artiest uit de kopregel, na een streepje (-, – of —)
+function artiestUitKop(k) {
+  const m = k.match(/\s+-\s+|\s*[–—]\s*/);
+  return m ? k.slice(m.index + m[0].length) : '';
 }
 
 function youtubeId(u) {
@@ -300,7 +306,7 @@ async function toonSong(bestand) {
 
   app.innerHTML = `${terugLink()}
     <h1>${esc(titel)}</h1>
-    <p class="info">${esc(song.kop.includes(' - ') ? song.kop.split(' - ').slice(1).join(' - ') : '')}</p>
+    <p class="info">${esc(song.meta.artiest || artiestUitKop(song.kop))}</p>
     <p class="info" id="keyinfo"></p>
     ${song.capo ? `<p class="info">${esc(song.capo)}</p>` : ''}
     <div class="bedien" id="bedien"></div>
