@@ -259,17 +259,10 @@
   "repertoire": false
  },
  {
-  "bestand": "Dear Ann 2.html",
-  "titel": "Dear Ann 2",
-  "artiest": "George Baker Selection (1970)",
-  "key": "A",
-  "repertoire": false
- },
- {
   "bestand": "Dear Ann.html",
   "titel": "Dear Ann",
   "artiest": "George Baker Selection (1970)",
-  "key": "G",
+  "key": "A",
   "repertoire": false
  },
  {
@@ -746,6 +739,13 @@
   "titel": "Rider In The Rain",
   "artiest": "Randy Newman",
   "key": "C",
+  "repertoire": false
+ },
+ {
+  "bestand": "Ring Ring I ve Got To Sing.html",
+  "titel": "Ring Ring I ve Got To Sing",
+  "artiest": "Ferre Grignard",
+  "key": "A",
   "repertoire": false
  },
  {
