@@ -903,6 +903,13 @@
   "repertoire": true
  },
  {
+  "bestand": "Tom Dooley.html",
+  "titel": "Tom Dooley",
+  "artiest": "The Kingston Trio (1959)",
+  "key": "E",
+  "repertoire": true
+ },
+ {
   "bestand": "Tussen Die Liefde En Die Leegte.html",
   "titel": "Tussen Die Liefde En Die Leegte",
   "artiest": "Amanda Strydom/Stef Bos",
@@ -1034,6 +1041,13 @@
   "artiest": "You've Got A Friend",
   "key": "E",
   "repertoire": false
+ },
+ {
+  "bestand": "Ze Kwamen Uit 't Zuiden.html",
+  "titel": "Ze Kwamen Uit 't Zuiden",
+  "artiest": "Mistero Buffo (1983)",
+  "key": "G",
+  "repertoire": true
  },
  {
   "bestand": "Zombie.html",
