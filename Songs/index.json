@@ -56,13 +56,6 @@
   "repertoire": false
  },
  {
-  "bestand": "Aint No Sunshine - Bill Withers.html",
-  "titel": "Aint No Sunshine - Bill Withers",
-  "artiest": "",
-  "key": "Am",
-  "repertoire": false
- },
- {
   "bestand": "Aint No Sunshine.html",
   "titel": "Aint No Sunshine",
   "artiest": "Bill Withers",
@@ -70,6 +63,15 @@
   "repertoire": false
  },
  {
+
+  "bestand": "Aint No Sunshine.html",
+  "titel": "Aint No Sunshine",
+  "artiest": "Bill Withers",
+  "key": "Am",
+  "repertoire": false
+ },
+ {
+
   "bestand": "All I Ever Need Is You.html",
   "titel": "All I Ever Need Is You",
   "artiest": "Sonny and Cher",
@@ -182,13 +184,6 @@
   "repertoire": false
  },
  {
-  "bestand": "Brood Voor Morgenvroeg - Bart Peeters.html",
-  "titel": "Brood Voor Morgenvroeg - Bart Peeters",
-  "artiest": "Bart Peeters  (2017)",
-  "key": "F#",
-  "repertoire": false
- },
- {
   "bestand": "Brood Voor Morgenvroeg.html",
   "titel": "Brood Voor Morgenvroeg",
   "artiest": "Bart Peeters  (2017)",
@@ -196,6 +191,15 @@
   "repertoire": false
  },
  {
+
+  "bestand": "Brood Voor Morgenvroeg.html",
+  "titel": "Brood Voor Morgenvroeg",
+  "artiest": "Bart Peeters  (2017)",
+  "key": "F#",
+  "repertoire": false
+ },
+ {
+
   "bestand": "Brown Eyed Girl.html",
   "titel": "Brown Eyed Girl",
   "artiest": "Van Morrison (1967)",
@@ -213,6 +217,7 @@
   "bestand": "Bury Me Beneath The Willow.html",
   "titel": "Bury Me Beneath The Willow",
   "artiest": "(A.P.Carter) Chris Thiele",
+
   "key": "A",
   "repertoire": false
  },
@@ -220,6 +225,7 @@
   "bestand": "Bury Me Under The Weeping Willow-Chris Thiele.html",
   "titel": "Bury Me Beneath The Willow (A.P.Carter)- Chris Thiele",
   "artiest": "",
+
   "key": "A",
   "repertoire": false
  },
@@ -350,6 +356,7 @@
   "repertoire": false
  },
  {
+
   "bestand": "Good Night Irene.html",
   "titel": "Good Night Irene",
   "artiest": "Ry Cooder (1976)",
@@ -357,6 +364,7 @@
   "repertoire": true
  },
  {
+
   "bestand": "Good Times.html",
   "titel": "Good Times",
   "artiest": "Edie Brickell (1994)",
@@ -490,6 +498,7 @@
   "repertoire": true
  },
  {
+
   "bestand": "Irene Goodnight.html",
   "titel": "Irene Goodnight",
   "artiest": "Leadbelly",
@@ -500,6 +509,11 @@
   "bestand": "Iris - Goo Goo Dolls.html",
   "titel": "Iris - Goo Goo Dolls",
   "artiest": "",
+
+  "bestand": "Iris.html",
+  "titel": "Iris",
+  "artiest": "Goo Goo Dolls",
+
   "key": "Bm",
   "repertoire": false
  },
@@ -674,7 +688,7 @@
  {
   "bestand": "Molly Malone.html",
   "titel": "Molly Malone",
-  "artiest": "",
+  "artiest": "The Dubliners",
   "key": "C",
   "repertoire": true
  },
@@ -771,8 +785,13 @@
  },
  {
   "bestand": "Reborn Again - Adri S.html",
+
   "titel": "Reborn Again - Adri S",
   "artiest": "Adri S. (1977 melodie, 2002 tekst, 2026 video)",
+
+  "titel": "Reborn Again",
+  "artiest": "Adri Soontiëns (1977 melodie, 2002 tekst, 2026 video)",
+
   "key": "A",
   "repertoire": false
  },
@@ -849,9 +868,9 @@
  {
   "bestand": "Somewhere Between Your Heart And Mine.html",
   "titel": "Somewhere Between Your Heart And Mine",
-  "artiest": "",
-  "key": "G",
-  "repertoire": false
+  "artiest": "Bonnie Owens and Merle Haggard/Tumbleweeds",
+  "key": "E",
+  "repertoire": true
  },
  {
   "bestand": "Sous Le Ciel De Paris (Piaf).html",
@@ -959,7 +978,7 @@
   "repertoire": true
  },
  {
-  "bestand": "The town I loved So Well.html",
+  "bestand": "The Town I loved So Well.html",
   "titel": "The Town I loved So Well",
   "artiest": "Dubliners",
   "key": "Bb",
@@ -1099,8 +1118,13 @@
   "repertoire": false
  },
  {
+
   "bestand": "WILLIN'.html",
   "titel": "WILLIN'",
+
+  "bestand": "Willin'.html",
+  "titel": "Willin'",
+
   "artiest": "Little Feat",
   "key": "G",
   "repertoire": false
