@@ -63,15 +63,6 @@
   "repertoire": false
  },
  {
-
-  "bestand": "Aint No Sunshine.html",
-  "titel": "Aint No Sunshine",
-  "artiest": "Bill Withers",
-  "key": "Am",
-  "repertoire": false
- },
- {
-
   "bestand": "All I Ever Need Is You.html",
   "titel": "All I Ever Need Is You",
   "artiest": "Sonny and Cher",
@@ -191,15 +182,6 @@
   "repertoire": false
  },
  {
-
-  "bestand": "Brood Voor Morgenvroeg.html",
-  "titel": "Brood Voor Morgenvroeg",
-  "artiest": "Bart Peeters  (2017)",
-  "key": "F#",
-  "repertoire": false
- },
- {
-
   "bestand": "Brown Eyed Girl.html",
   "titel": "Brown Eyed Girl",
   "artiest": "Van Morrison (1967)",
@@ -217,15 +199,6 @@
   "bestand": "Bury Me Beneath The Willow.html",
   "titel": "Bury Me Beneath The Willow",
   "artiest": "(A.P.Carter) Chris Thiele",
-
-  "key": "A",
-  "repertoire": false
- },
- {
-  "bestand": "Bury Me Under The Weeping Willow-Chris Thiele.html",
-  "titel": "Bury Me Beneath The Willow (A.P.Carter)- Chris Thiele",
-  "artiest": "",
-
   "key": "A",
   "repertoire": false
  },
@@ -337,7 +310,7 @@
  {
   "bestand": "Follow The Sun.html",
   "titel": "Follow The Sun",
-  "artiest": "Follow The Sun(2012) - capo op 5 = D",
+  "artiest": "Follow The Sun(2012)",
   "key": "G",
   "repertoire": false
  },
@@ -356,15 +329,6 @@
   "repertoire": false
  },
  {
-
-  "bestand": "Good Night Irene.html",
-  "titel": "Good Night Irene",
-  "artiest": "Ry Cooder (1976)",
-  "key": "E",
-  "repertoire": true
- },
- {
-
   "bestand": "Good Times.html",
   "titel": "Good Times",
   "artiest": "Edie Brickell (1994)",
@@ -496,26 +460,6 @@
   "artiest": "Greg Trooper (2003)",
   "key": "D",
   "repertoire": true
- },
- {
-
-  "bestand": "Irene Goodnight.html",
-  "titel": "Irene Goodnight",
-  "artiest": "Leadbelly",
-  "key": "G",
-  "repertoire": false
- },
- {
-  "bestand": "Iris - Goo Goo Dolls.html",
-  "titel": "Iris - Goo Goo Dolls",
-  "artiest": "",
-
-  "bestand": "Iris.html",
-  "titel": "Iris",
-  "artiest": "Goo Goo Dolls",
-
-  "key": "Bm",
-  "repertoire": false
  },
  {
   "bestand": "Iris.html",
@@ -785,13 +729,8 @@
  },
  {
   "bestand": "Reborn Again - Adri S.html",
-
   "titel": "Reborn Again - Adri S",
   "artiest": "Adri S. (1977 melodie, 2002 tekst, 2026 video)",
-
-  "titel": "Reborn Again",
-  "artiest": "Adri Soontiëns (1977 melodie, 2002 tekst, 2026 video)",
-
   "key": "A",
   "repertoire": false
  },
@@ -831,8 +770,8 @@
   "repertoire": false
  },
  {
-  "bestand": "Set Fire to the Rain - Adele.html",
-  "titel": "Set Fire To The Rain",
+  "bestand": "Set Fire to the Rain.html",
+  "titel": "Set Fire to the Rain",
   "artiest": "Adele (2011)",
   "key": "Am",
   "repertoire": false
@@ -873,7 +812,7 @@
   "repertoire": true
  },
  {
-  "bestand": "Sous Le Ciel De Paris (Piaf).html",
+  "bestand": "Sous Le Ciel De Paris.html",
   "titel": "Sous Le Ciel De Paris",
   "artiest": "Édith Piaf",
   "key": "E",
@@ -978,7 +917,7 @@
   "repertoire": true
  },
  {
-  "bestand": "The Town I loved So Well.html",
+  "bestand": "The town I loved So Well.html",
   "titel": "The Town I loved So Well",
   "artiest": "Dubliners",
   "key": "Bb",
@@ -1041,7 +980,7 @@
   "repertoire": false
  },
  {
-  "bestand": "Une belle histoire - Michel Fugain.html",
+  "bestand": "Une Belle Histoire.html",
   "titel": "Une Belle Histoire",
   "artiest": "Michel Fugain",
   "key": "Am",
@@ -1118,13 +1057,8 @@
   "repertoire": false
  },
  {
-
-  "bestand": "WILLIN'.html",
-  "titel": "WILLIN'",
-
   "bestand": "Willin'.html",
   "titel": "Willin'",
-
   "artiest": "Little Feat",
   "key": "G",
   "repertoire": false
@@ -1144,13 +1078,6 @@
   "repertoire": false
  },
  {
-  "bestand": "Wonderful Tonight (1).html",
-  "titel": "Wonderful Tonight (1)",
-  "artiest": "Eric Clapton (1977)",
-  "key": "G",
-  "repertoire": true
- },
- {
   "bestand": "Wonderful Tonight.html",
   "titel": "Wonderful Tonight",
   "artiest": "Eric Clapton (1977)",
@@ -1158,7 +1085,7 @@
   "repertoire": true
  },
  {
-  "bestand": "You Aint Goin Nowhere - Byrds.html",
+  "bestand": "You Aint Goin Nowhere.html",
   "titel": "You Aint Goin Nowhere",
   "artiest": "The Byrds (1968) - (Bob Dylan)",
   "key": "G",
