@@ -245,6 +245,13 @@
   "repertoire": false
  },
  {
+  "bestand": "De Lichtjes Van De Schelde.html",
+  "titel": "De Lichtjes Van De Schelde",
+  "artiest": "Bobbejaan Schoepen (1952)",
+  "key": "Eb",
+  "repertoire": false
+ },
+ {
   "bestand": "De Monniken.html",
   "titel": "De Monniken",
   "artiest": "Jaap Fischer (1961)",
@@ -655,6 +662,13 @@
   "titel": "Mull Of Kintyre",
   "artiest": "Wings (1977)",
   "key": "A",
+  "repertoire": false
+ },
+ {
+  "bestand": "nieuw 1.html",
+  "titel": "nieuw 1",
+  "artiest": "Bobbejaan Schoepen (1952)",
+  "key": "Eb",
   "repertoire": false
  },
  {
