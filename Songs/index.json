@@ -665,13 +665,6 @@
   "repertoire": false
  },
  {
-  "bestand": "nieuw 1.html",
-  "titel": "nieuw 1",
-  "artiest": "Bobbejaan Schoepen (1952)",
-  "key": "Eb",
-  "repertoire": false
- },
- {
   "bestand": "Nobody Knows You When You’re Down And Out.html",
   "titel": "Nobody Knows You When You’re Down And Out",
   "artiest": "Eric Clapton (Unplugged 1992)",
@@ -906,7 +899,7 @@
   "bestand": "The Dutchman.html",
   "titel": "The Dutchman",
   "artiest": "Liam Clancy",
-  "key": "E",
+  "key": "C",
   "repertoire": true
  },
  {
