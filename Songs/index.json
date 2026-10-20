@@ -833,6 +833,13 @@
   "repertoire": false
  },
  {
+  "bestand": "So Long Marianne.html",
+  "titel": "So Long Marianne",
+  "artiest": "Leonard Cohen (1967)",
+  "key": "A",
+  "repertoire": false
+ },
+ {
   "bestand": "Society.html",
   "titel": "Society",
   "artiest": "Eddie Vedder",
@@ -1115,7 +1122,7 @@
  {
   "bestand": "Wonderful Life.html",
   "titel": "Wonderful Life",
-  "artiest": "Katie Melua (2014) Capo op II voor grepen hieronder",
+  "artiest": "Katie Melua (2014)",
   "key": "Gm",
   "repertoire": false
  },
