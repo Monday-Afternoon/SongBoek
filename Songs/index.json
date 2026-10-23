@@ -520,7 +520,7 @@
  {
   "bestand": "I Only Wanna Be With You.html",
   "titel": "I Only Wanna Be With You",
-  "artiest": "Hootie & The Blow Fish",
+  "artiest": "Hootie & The Blow Fish (1995)",
   "key": "F#",
   "repertoire": false
  },
@@ -784,13 +784,6 @@
   "repertoire": false
  },
  {
-  "bestand": "Only Wanna Be With You.html",
-  "titel": "Only Wanna Be With You",
-  "artiest": "Hootie & the Blowfish (1995)",
-  "key": "D",
-  "repertoire": false
- },
- {
   "bestand": "Op De Laatste Donderdag (L42).html",
   "titel": "Op De Laatste Donderdag (L42)",
   "artiest": "AI-RootsClub (2026)",
@@ -1034,6 +1027,13 @@
   "artiest": "Creedence Clearwater Revival  1969 (Willy and the Poor Boys - Leadbelly)",
   "key": "D",
   "repertoire": true
+ },
+ {
+  "bestand": "The Passenger.html",
+  "titel": "The Passenger",
+  "artiest": "Iggy Pop",
+  "key": "Am",
+  "repertoire": false
  },
  {
   "bestand": "The town I loved So Well.html",
