@@ -84,6 +84,13 @@
   "repertoire": false
  },
  {
+  "bestand": "Always On My Mind.html",
+  "titel": "Always On My Mind",
+  "artiest": "Willie Nelson",
+  "key": "D",
+  "repertoire": false
+ },
+ {
   "bestand": "As Ge Ooit.html",
   "titel": "As Ge Ooit",
   "artiest": "JW Roy/Gerard van Maasakkers",
@@ -102,6 +109,13 @@
   "titel": "Aïcha",
   "artiest": "Khaled (1996)",
   "key": "Gm",
+  "repertoire": false
+ },
+ {
+  "bestand": "Bad Moon Rising.html",
+  "titel": "Bad Moon Rising",
+  "artiest": "Creedence Clearwater Revival (1969)",
+  "key": "D",
   "repertoire": false
  },
  {
@@ -424,6 +438,13 @@
   "titel": "Help",
   "artiest": "Beatles (1965)",
   "key": "A",
+  "repertoire": false
+ },
+ {
+  "bestand": "Het Kleine Cafe Aan De Haven.html",
+  "titel": "Het Kleine Cafe Aan De Haven",
+  "artiest": "Pierre Cartner",
+  "key": "Gm",
   "repertoire": false
  },
  {
