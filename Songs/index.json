@@ -399,6 +399,13 @@
   "repertoire": true
  },
  {
+  "bestand": "Hallelujah.html",
+  "titel": "Hallelujah",
+  "artiest": "Leonard Cohen",
+  "key": "C",
+  "repertoire": false
+ },
+ {
   "bestand": "Hard Times Come Again No More.html",
   "titel": "Hard Times Come Again No More",
   "artiest": "(Stephen Foster 1854) The Chieftains (2012)",
