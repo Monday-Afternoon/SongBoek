@@ -29,6 +29,7 @@ for f in sorted(map_songs.glob("*.html")):
         "artiest": artiest,
         "key": k.group(1).strip() if k else "",
         "repertoire": meta.get("repertoire", "").lower() in ("ja", "yes", "true", "1", "x", "waar"),
+        "goed": meta.get("goed", "").lower() in ("ja", "yes", "true", "1", "x", "waar"),
     })
 
 (map_songs / "index.json").write_text(

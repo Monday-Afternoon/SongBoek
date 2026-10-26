@@ -7,8 +7,8 @@
 <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;🎵&lt;/text&gt;&lt;/svg&gt;">
 <script src="instellingen.js"></script>
 <style>
-:root{--bg:#f3f5f7;--fg:#1b2430;--muted:#6b7683;--chord:#0a5c8f;--card:#fff;--line:#d9dfe5}
-@media(prefers-color-scheme:dark){:root{--bg:#12161b;--fg:#e6ebf0;--muted:#8d98a5;--chord:#6cc0f0;--card:#1b2129;--line:#2c353f}}
+:root{--bg:#f3f5f7;--fg:#1b2430;--muted:#6b7683;--chord:#0a5c8f;--card:#fff;--line:#d9dfe5;--goed:#1b7f3b}
+@media(prefers-color-scheme:dark){:root{--bg:#12161b;--fg:#e6ebf0;--muted:#8d98a5;--chord:#6cc0f0;--card:#1b2129;--line:#2c353f;--goed:#6fdc97}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
 main{max-width:860px;margin:0 auto;padding:18px 16px 60px}
@@ -32,6 +32,8 @@ input[type=search]{width:100%;padding:11px 12px;font:inherit;border:1px solid va
 .noten{display:inline-block;padding:8px 14px;border:1px solid var(--chord);border-radius:6px;color:var(--chord);text-decoration:none;font-weight:600}
 .noten:hover,.noten:focus-visible{background:var(--card)}
 .ster{color:var(--chord);margin-right:.35em}
+.vink{color:var(--goed);font-weight:700;margin-right:.35em}
+.lijst a.goed .t{color:var(--goed)}
 .kop{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .kop h1{margin:.3em 0}
 .balk{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:8px 0;background:var(--bg)}
@@ -173,6 +175,9 @@ function songsMap() {
   return mapBelofte;
 }
 
+// goed: ja  (ook 'true', '1' of 'x') in de <meta> = deze song gaat al goed
+const isGoed = v => /^(ja|true|1|x)$/i.test(String(v == null ? '' : v).trim());
+
 async function toonOverzicht(rep = false) {
   terugNaar = rep ? '#repertoire' : '#';
   document.title = rep ? 'Ons repertoire – ' + INST.tabbladTitel : INST.tabbladTitel;
@@ -194,7 +199,7 @@ async function toonOverzicht(rep = false) {
   const teken = () => {
     const q = document.getElementById('zoek').value.toLowerCase();
     lijst.innerHTML = songs.filter(s => (s.titel + ' ' + s.artiest).toLowerCase().includes(q)).map(s =>
-      `<a href="#/${encodeURIComponent(s.bestand)}"><span class="t">${s.repertoire && !rep ? '<span class="ster" role="img" aria-label="In ons repertoire">★</span>' : ''}${esc(s.titel)}</span><span class="m">${esc(s.artiest)}${s.key ? ' · ' + esc(s.key) : ''}</span></a>`).join('')
+      `<a class="${isGoed(s.goed) ? 'goed' : ''}" href="#/${encodeURIComponent(s.bestand)}"><span class="t">${s.repertoire && !rep ? '<span class="ster" role="img" aria-label="In ons repertoire">★</span>' : ''}${isGoed(s.goed) ? '<span class="vink" role="img" aria-label="Gaat al goed">✓</span>' : ''}${esc(s.titel)}</span><span class="m">${esc(s.artiest)}${s.key ? ' · ' + esc(s.key) : ''}</span></a>`).join('')
       || (rep && !songs.length
         ? '<p class="info">Nog geen songs in het repertoire. Zet <b>repertoire: ja</b> in de &lt;meta&gt; van een song en draai start_songboek.bat.</p>'
         : '<p class="info">Geen songs gevonden.</p>');
