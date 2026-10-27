@@ -176,14 +176,15 @@ function songsMap() {
 }
 
 // goed: ja  (ook 'true', '1' of 'x') in de <meta> = deze song gaat al goed
+const AKKOORDEN_LINK = '<a class="noten" href="https://www.sixstrings.nl/akkoorden" target="_blank" rel="noopener">🎸 Akkoorden opzoeken</a>';
 const isGoed = v => /^(ja|true|1|x)$/i.test(String(v == null ? '' : v).trim());
 
 async function toonOverzicht(rep = false) {
   terugNaar = rep ? '#repertoire' : '#';
   document.title = rep ? 'Ons repertoire – ' + INST.tabbladTitel : INST.tabbladTitel;
   app.innerHTML = (rep
-    ? '<a class="terug" href="#">‹ Alle songs</a><div class="kop"><h1>In ons repertoire</h1></div>'
-    : '<div class="kop"><h1>' + esc(INST.titel) + '</h1><a class="noten" href="#repertoire">★ In ons repertoire</a></div>') + '<input type="search" id="zoek" placeholder="Zoek op titel of artiest" aria-label="Zoeken"><div class="lijst' + (rep ? ' compact' : '') + '" id="lijst"></div>';
+    ? '<a class="terug" href="#">‹ Alle songs</a><div class="kop"><h1>In ons repertoire</h1>' + AKKOORDEN_LINK + '</div>'
+    : '<div class="kop"><h1>' + esc(INST.titel) + '</h1><span class="notenrij" style="margin:0"><a class="noten" href="#repertoire">★ In ons repertoire</a>' + AKKOORDEN_LINK + '</span></div>') + '<input type="search" id="zoek" placeholder="Zoek op titel of artiest" aria-label="Zoeken"><div class="lijst' + (rep ? ' compact' : '') + '" id="lijst"></div>';
   let songs;
   try {
     const r = await fetch((await songsMap()) + '/index.json', {cache:'no-cache'});
@@ -315,7 +316,7 @@ async function toonSong(bestand) {
     <p class="info" id="keyinfo"></p>
     ${song.capo ? `<p class="info">${esc(song.capo)}</p>` : ''}
     <div class="bedien" id="bedien"></div>
-    ${notenKnoppen ? `<div class="notenrij">${notenKnoppen}</div>` : ''}
+    <div class="notenrij">${notenKnoppen}${AKKOORDEN_LINK}</div>
     ${vid ? `<iframe class="video" src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(vid)}" title="Video bij ${esc(titel)}" allow="encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>` : ''}
     <div class="tekst" id="tekst"></div>`;
   if (song.meta.lettertype) document.getElementById('tekst').style.fontFamily = `"${song.meta.lettertype}", system-ui, sans-serif`;
