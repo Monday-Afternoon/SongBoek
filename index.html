@@ -161,7 +161,7 @@ const INST = Object.assign({titel: 'Songboek', tabbladTitel: 'Songboek'}, window
 const toestand = {};   // onthoudt key en capo per song tijdens het bezoek
 const PDFJS = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/';
 let terugNaar = '#';   // waar de terug-link van een song heen gaat (overzicht of repertoire)
-const terugLink = () => `<a class="terug" href="${terugNaar}">‹ ${terugNaar === '#repertoire' ? 'Repertoire' : 'Alle songs'}</a>`;
+const terugLink = () => `<a class="terug" href="${terugNaar}">‹ ${terugNaar === '#repertoire' ? 'Repertoire' : terugNaar === '#nieuw' ? 'Nieuwste songs' : 'Alle songs'}</a>`;
 
 // GitHub Pages let op hoofdletters: zoek de map 'songs' of 'Songs'
 let mapBelofte;
@@ -179,12 +179,15 @@ function songsMap() {
 const AKKOORDEN_LINK = '<a class="noten" href="https://www.sixstrings.nl/akkoorden" target="_blank" rel="noopener">🎸 Akkoorden opzoeken</a>';
 const isGoed = v => /^(ja|true|1|x)$/i.test(String(v == null ? '' : v).trim());
 
-async function toonOverzicht(rep = false) {
-  terugNaar = rep ? '#repertoire' : '#';
-  document.title = rep ? 'Ons repertoire – ' + INST.tabbladTitel : INST.tabbladTitel;
+async function toonOverzicht(modus = 'alle') {
+  const rep = modus === 'rep', nieuw = modus === 'nieuw';
+  terugNaar = rep ? '#repertoire' : nieuw ? '#nieuw' : '#';
+  document.title = rep ? 'Ons repertoire – ' + INST.tabbladTitel : nieuw ? 'Nieuwste songs – ' + INST.tabbladTitel : INST.tabbladTitel;
   app.innerHTML = (rep
     ? '<a class="terug" href="#">‹ Alle songs</a><div class="kop"><h1>In ons repertoire</h1>' + AKKOORDEN_LINK + '</div>'
-    : '<div class="kop"><h1>' + esc(INST.titel) + '</h1><span class="notenrij" style="margin:0"><a class="noten" href="#repertoire">★ In ons repertoire</a>' + AKKOORDEN_LINK + '</span></div>') + '<input type="search" id="zoek" placeholder="Zoek op titel of artiest" aria-label="Zoeken"><div class="lijst' + (rep ? ' compact' : '') + '" id="lijst"></div>';
+    : nieuw
+    ? '<a class="terug" href="#">‹ Alle songs</a><div class="kop"><h1>De 10 nieuwste songs</h1>' + AKKOORDEN_LINK + '</div>'
+    : '<div class="kop"><h1>' + esc(INST.titel) + '</h1><span class="notenrij" style="margin:0"><a class="noten" href="#nieuw">🆕 Laatste 10</a><a class="noten" href="#repertoire">★ In ons repertoire</a>' + AKKOORDEN_LINK + '</span></div>') + '<input type="search" id="zoek" placeholder="Zoek op titel of artiest" aria-label="Zoeken"' + (nieuw ? ' style="display:none"' : '') + '><div class="lijst' + (rep ? ' compact' : '') + '" id="lijst"></div>';
   let songs;
   try {
     const r = await fetch((await songsMap()) + '/index.json', {cache:'no-cache'});
@@ -195,12 +198,17 @@ async function toonOverzicht(rep = false) {
     return;
   }
   if (rep) songs = songs.filter(s => s.repertoire);
-  songs.sort((a,b) => a.titel.localeCompare(b.titel, 'nl'));
+  if (nieuw) {
+    // nieuwste eerst; bij dezelfde datum op titel
+    songs.sort((a,b) => (b.toegevoegd || '').localeCompare(a.toegevoegd || '') || a.titel.localeCompare(b.titel, 'nl'));
+    songs = songs.slice(0, 10);
+  } else songs.sort((a,b) => a.titel.localeCompare(b.titel, 'nl'));
+  const datum = d => { const t = new Date(d); return isNaN(t) ? '' : ' · ' + t.toLocaleDateString('nl-NL', {day: 'numeric', month: 'short', year: 'numeric'}); };
   const lijst = document.getElementById('lijst');
   const teken = () => {
     const q = document.getElementById('zoek').value.toLowerCase();
     lijst.innerHTML = songs.filter(s => (s.titel + ' ' + s.artiest).toLowerCase().includes(q)).map(s =>
-      `<a class="${isGoed(s.goed) ? 'goed' : ''}" href="#/${encodeURIComponent(s.bestand)}"><span class="t">${s.repertoire && !rep ? '<span class="ster" role="img" aria-label="In ons repertoire">★</span>' : ''}${isGoed(s.goed) ? '<span class="vink" role="img" aria-label="Gaat al goed">✓</span>' : ''}${esc(s.titel)}</span><span class="m">${esc(s.artiest)}${s.key ? ' · ' + esc(s.key) : ''}</span></a>`).join('')
+      `<a class="${isGoed(s.goed) ? 'goed' : ''}" href="#/${encodeURIComponent(s.bestand)}"><span class="t">${s.repertoire && !rep ? '<span class="ster" role="img" aria-label="In ons repertoire">★</span>' : ''}${isGoed(s.goed) ? '<span class="vink" role="img" aria-label="Gaat al goed">✓</span>' : ''}${esc(s.titel)}</span><span class="m">${esc(s.artiest)}${s.key ? ' · ' + esc(s.key) : ''}${nieuw && s.toegevoegd ? ' · toegevoegd ' + esc(datum(s.toegevoegd).replace(' · ', '')) : ''}</span></a>`).join('')
       || (rep && !songs.length
         ? '<p class="info">Nog geen songs in het repertoire. Zet <b>repertoire: ja</b> in de &lt;meta&gt; van een song en draai start_songboek.bat.</p>'
         : '<p class="info">Geen songs gevonden.</p>');
@@ -365,13 +373,14 @@ async function toonSong(bestand) {
 
 function route() {
   if (huidigGeluid) { huidigGeluid.pause(); huidigGeluid = null; }
-  if (location.hash === '#repertoire') toonOverzicht(true);
+  if (location.hash === '#repertoire') toonOverzicht('rep');
+  else if (location.hash === '#nieuw') toonOverzicht('nieuw');
   else if (location.hash.startsWith('#bekijk/')) {
     const d = location.hash.slice(1).split('/').map(decodeURIComponent);
     toonBestand(d[1], d[2], d[3] || 'Notenbeeld');
   } else {
     const h = decodeURIComponent(location.hash.replace(/^#\/?/, ''));
-    h ? toonSong(h) : toonOverzicht(false);
+    h ? toonSong(h) : toonOverzicht('alle');
   }
   window.scrollTo(0, 0);
 }
