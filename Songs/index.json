@@ -819,6 +819,15 @@
   "goed": false
  },
  {
+  "bestand": "Lady Jane.html",
+  "titel": "Lady Jane",
+  "artiest": "The Rolling Stones (1966)",
+  "key": "D",
+  "repertoire": false,
+  "toegevoegd": "2026-11-03",
+  "goed": false
+ },
+ {
   "bestand": "Last Thing On My Mind.html",
   "titel": "Last Thing On My Mind",
   "artiest": "Tom Paxton",
@@ -1167,6 +1176,15 @@
   "key": "A",
   "repertoire": false,
   "toegevoegd": "2026-10-18",
+  "goed": false
+ },
+ {
+  "bestand": "Ruby Tuesday.html",
+  "titel": "Ruby Tuesday",
+  "artiest": "The Rolling Stones {1967)",
+  "key": "Am",
+  "repertoire": false,
+  "toegevoegd": "2026-11-03",
   "goed": false
  },
  {
