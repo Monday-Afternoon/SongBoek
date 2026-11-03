@@ -504,6 +504,15 @@
   "goed": false
  },
  {
+  "bestand": "Green Eyes.html",
+  "titel": "Green Eyes",
+  "artiest": "Coldplay",
+  "key": "A",
+  "repertoire": false,
+  "toegevoegd": "2026-11-03",
+  "goed": false
+ },
+ {
   "bestand": "Green Fields of France.html",
   "titel": "Green Fields of France",
   "artiest": "The Fureys",
@@ -663,6 +672,15 @@
   "key": "Am",
   "repertoire": false,
   "toegevoegd": "2026-10-01",
+  "goed": false
+ },
+ {
+  "bestand": "Hurricane.html",
+  "titel": "Hurricane",
+  "artiest": "Bob Dylan",
+  "key": "Am",
+  "repertoire": false,
+  "toegevoegd": "2026-11-03",
   "goed": false
  },
  {
