@@ -5,6 +5,7 @@
   "artiest": "Peter Paul and Mary (Original - Hedy West)",
   "key": "D",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -14,6 +15,7 @@
   "artiest": "America",
   "key": "Em",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -23,6 +25,7 @@
   "artiest": "The Dubliners",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -32,6 +35,7 @@
   "artiest": "John Hiatt",
   "key": "D",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -41,6 +45,7 @@
   "artiest": "Texas Tornados (1989)",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-07",
   "goed": false
  },
@@ -50,6 +55,7 @@
   "artiest": "Ed Sheeran (2020)",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-07",
   "goed": false
  },
@@ -59,6 +65,7 @@
   "artiest": "Bob Seger & The Silver Bullet Band (1980)",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -68,6 +75,7 @@
   "artiest": "Bill Withers",
   "key": "Am",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -77,6 +85,7 @@
   "artiest": "Sonny and Cher",
   "key": "C",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -86,6 +95,7 @@
   "artiest": "Billie Holiday (1941)",
   "key": "F",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -95,6 +105,7 @@
   "artiest": "Captain Gumbo (1990)",
   "key": "G",
   "repertoire": false,
+  "taal": "FR",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -104,6 +115,7 @@
   "artiest": "Willie Nelson",
   "key": "D",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-23",
   "goed": false
  },
@@ -113,6 +125,7 @@
   "artiest": "JW Roy/Gerard van Maasakkers",
   "key": "B",
   "repertoire": false,
+  "taal": "NL",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -122,6 +135,7 @@
   "artiest": "(Marianne Faithfull 1964) Stones (1965)",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -131,6 +145,7 @@
   "artiest": "Khaled (1996)",
   "key": "Gm",
   "repertoire": false,
+  "taal": "FR",
   "toegevoegd": "2026-10-07",
   "goed": false
  },
@@ -140,6 +155,7 @@
   "artiest": "Creedence Clearwater Revival (1969)",
   "key": "D",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-23",
   "goed": false
  },
@@ -149,6 +165,7 @@
   "artiest": "Rory Gallagher (1973)",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-08",
   "goed": false
  },
@@ -158,6 +175,7 @@
   "artiest": "Lead Belly 1944",
   "key": "Em",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -167,6 +185,7 @@
   "artiest": "The Four Pennies",
   "key": "Am",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-12",
   "goed": false
  },
@@ -176,6 +195,7 @@
   "artiest": "The Dubliners",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -185,6 +205,7 @@
   "artiest": "The Beatles (1968)",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-20",
   "goed": false
  },
@@ -194,6 +215,7 @@
   "artiest": "Suzan & Freek",
   "key": "F",
   "repertoire": false,
+  "taal": "NL",
   "toegevoegd": "2026-10-20",
   "goed": false
  },
@@ -203,6 +225,7 @@
   "artiest": "Bob Dylan (1963)",
   "key": "E",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -212,6 +235,7 @@
   "artiest": "Fats Domino (1956) (Sammy Kaye 1940)",
   "key": "Bb",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-27",
   "goed": false
  },
@@ -221,6 +245,7 @@
   "artiest": "Kellie Rucker (2009)",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -230,6 +255,7 @@
   "artiest": "Jackson C. Frank",
   "key": "C#",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-08",
   "goed": false
  },
@@ -239,6 +265,7 @@
   "artiest": "Creedence Clearwater Revival 1968",
   "key": "E",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -248,6 +275,7 @@
   "artiest": "Bart Peeters  (2017)",
   "key": "F#",
   "repertoire": false,
+  "taal": "NL",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -257,6 +285,7 @@
   "artiest": "Van Morrison (1967)",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -266,6 +295,7 @@
   "artiest": "George Ezra",
   "key": "F",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-23",
   "goed": false
  },
@@ -275,6 +305,7 @@
   "artiest": "Louis Prima",
   "key": "D#",
   "repertoire": true,
+  "taal": "SP",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -284,6 +315,7 @@
   "artiest": "(A.P.Carter) Chris Thiele",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -293,6 +325,7 @@
   "artiest": "Van Morrison",
   "key": "Am",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -302,6 +335,7 @@
   "artiest": "Deep Purple (1970)",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -311,6 +345,7 @@
   "artiest": "Semisonic",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -320,6 +355,7 @@
   "artiest": "Dolly Parton",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -329,6 +365,7 @@
   "artiest": "Creedence Clearwater Revival (1969)",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-12",
   "goed": false
  },
@@ -338,6 +375,7 @@
   "artiest": "Julie London",
   "key": "Em",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -347,6 +385,7 @@
   "artiest": "MEAU",
   "key": "G",
   "repertoire": false,
+  "taal": "NL",
   "toegevoegd": "2026-10-20",
   "goed": false
  },
@@ -356,6 +395,7 @@
   "artiest": "John Mayer",
   "key": "Bm",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-11-06",
   "goed": false
  },
@@ -365,6 +405,7 @@
   "artiest": "Bobbejaan Schoepen (1952)",
   "key": "Eb",
   "repertoire": false,
+  "taal": "NL",
   "toegevoegd": "2026-10-19",
   "goed": false
  },
@@ -374,6 +415,7 @@
   "artiest": "Jaap Fischer (1961)",
   "key": "C",
   "repertoire": false,
+  "taal": "NL",
   "toegevoegd": "2026-10-03",
   "goed": false
  },
@@ -383,6 +425,7 @@
   "artiest": "Boudewijn de Groot (2004)",
   "key": "Em",
   "repertoire": false,
+  "taal": "NL",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -392,6 +435,7 @@
   "artiest": "George Baker Selection (1970)",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -401,6 +445,7 @@
   "artiest": "The Pogues",
   "key": "D",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -410,6 +455,7 @@
   "artiest": "Peter Gabriel & Kate Bush (1986)",
   "key": "Cm",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-23",
   "goed": false
  },
@@ -419,6 +465,7 @@
   "artiest": "The Police (1980)",
   "key": "Eb",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -428,6 +475,7 @@
   "artiest": "Bob Dylan (1963)",
   "key": "C",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -437,6 +485,7 @@
   "artiest": "Maura O'Connell",
   "key": "G",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -446,6 +495,7 @@
   "artiest": "Eddie Rabbitt (1980)",
   "key": "E",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -455,6 +505,7 @@
   "artiest": "Peter Maffay (1970)",
   "key": "E",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -464,6 +515,7 @@
   "artiest": "Runrig",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-31",
   "goed": false
  },
@@ -473,6 +525,7 @@
   "artiest": "Follow The Sun(2012)",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -482,6 +535,7 @@
   "artiest": "The Beatles (1969)",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -491,6 +545,7 @@
   "artiest": "Fleetwood Mac (1976)",
   "key": "F",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -500,6 +555,7 @@
   "artiest": "Edie Brickell (1994)",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -509,6 +565,7 @@
   "artiest": "Ry Cooder",
   "key": "E",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -518,6 +575,7 @@
   "artiest": "Coldplay",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-11-03",
   "goed": false
  },
@@ -527,6 +585,7 @@
   "artiest": "The Fureys",
   "key": "F",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -536,6 +595,7 @@
   "artiest": "The Mavericks and Raul Malo",
   "key": "G",
   "repertoire": true,
+  "taal": "SP",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -545,6 +605,7 @@
   "artiest": "Leonard Cohen",
   "key": "C",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-23",
   "goed": false
  },
@@ -554,6 +615,7 @@
   "artiest": "The Turtles (1967)",
   "key": "F#m",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-11-01",
   "goed": false
  },
@@ -563,6 +625,7 @@
   "artiest": "(Stephen Foster 1854) The Chieftains (2012)",
   "key": "D",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-27",
   "goed": true
  },
@@ -572,6 +635,7 @@
   "artiest": "Neil Young",
   "key": "D",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -581,6 +645,7 @@
   "artiest": "John Foggerty",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -590,6 +655,7 @@
   "artiest": "Neil Young (1972)",
   "key": "Em",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -599,6 +665,7 @@
   "artiest": "Geraint Watkins (2019)",
   "key": "C",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -608,6 +675,7 @@
   "artiest": "Gerard van Maasakkers (versie van video onderaan)",
   "key": "G",
   "repertoire": false,
+  "taal": "NL",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -617,6 +685,7 @@
   "artiest": "Beatles (1965)",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -626,6 +695,7 @@
   "artiest": "Guus Meeuwis & Vagant",
   "key": "Em",
   "repertoire": false,
+  "taal": "NL",
   "toegevoegd": "2026-11-01",
   "goed": false
  },
@@ -635,6 +705,7 @@
   "artiest": "Pierre Cartner",
   "key": "Gm",
   "repertoire": false,
+  "taal": "NL",
   "toegevoegd": "2026-10-23",
   "goed": false
  },
@@ -644,6 +715,7 @@
   "artiest": "Jeff Beck",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-11-01",
   "goed": false
  },
@@ -653,6 +725,7 @@
   "artiest": "BLØF",
   "key": "G",
   "repertoire": false,
+  "taal": "NL",
   "toegevoegd": "2026-10-23",
   "goed": false
  },
@@ -662,6 +735,7 @@
   "artiest": "The Rolling Stones",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-11-03",
   "goed": false
  },
@@ -671,6 +745,7 @@
   "artiest": "Etta James",
   "key": "D",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -680,6 +755,7 @@
   "artiest": "The Animals (1964)",
   "key": "Am",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -689,6 +765,7 @@
   "artiest": "Bob Dylan",
   "key": "Am",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-11-03",
   "goed": false
  },
@@ -698,6 +775,7 @@
   "artiest": "Rod Steward (1975)",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -707,6 +785,7 @@
   "artiest": "Billy Swan (1980)",
   "key": "C",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -716,6 +795,7 @@
   "artiest": "Tom Paxton",
   "key": "C",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -725,6 +805,7 @@
   "artiest": "Hootie & The Blow Fish (1995)",
   "key": "F#",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-23",
   "goed": false
  },
@@ -734,6 +815,7 @@
   "artiest": "Eric Clapton (1974)",
   "key": "Gm",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -743,6 +825,7 @@
   "artiest": "Bryan Adams",
   "key": "C",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-11-01",
   "goed": false
  },
@@ -752,6 +835,7 @@
   "artiest": "Zoë Livay (feat. Snelle)",
   "key": "C",
   "repertoire": false,
+  "taal": "NL",
   "toegevoegd": "2026-10-19",
   "goed": false
  },
@@ -761,6 +845,7 @@
   "artiest": "Mungo Jerry (1970)",
   "key": "E",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -770,6 +855,7 @@
   "artiest": "Greg Trooper (2003)",
   "key": "C",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-27",
   "goed": false
  },
@@ -779,6 +865,7 @@
   "artiest": "Goo Goo Dolls",
   "key": "Bm",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -788,6 +875,7 @@
   "artiest": "Dolly Parton & Kenny Rogers",
   "key": "C",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -797,6 +885,7 @@
   "artiest": "Bob Dylan (1964)",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -806,6 +895,7 @@
   "artiest": "Harry Belafonte",
   "key": "C",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -815,6 +905,7 @@
   "artiest": "Serge Gainsbourg & Jane Birkin (1969)",
   "key": "G",
   "repertoire": false,
+  "taal": "FR",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -824,6 +915,7 @@
   "artiest": "Crosby, Stills & Nash (1977)",
   "key": "F#m",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -833,6 +925,7 @@
   "artiest": "Marillion (1985)",
   "key": "D",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -842,6 +935,7 @@
   "artiest": "Los Lobos",
   "key": "C",
   "repertoire": true,
+  "taal": "SP",
   "toegevoegd": "2026-10-12",
   "goed": false
  },
@@ -851,6 +945,7 @@
   "artiest": "The Rolling Stones (1966)",
   "key": "D",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-11-03",
   "goed": false
  },
@@ -860,6 +955,7 @@
   "artiest": "Tom Paxton",
   "key": "A",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-27",
   "goed": false
  },
@@ -869,6 +965,7 @@
   "artiest": "Melanie + Edwin Hawkins Singers (1970)",
   "key": "D",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-11-01",
   "goed": false
  },
@@ -878,6 +975,7 @@
   "artiest": "Bob Dylan (1963)",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -887,6 +985,7 @@
   "artiest": "Eric Clapton (acoustic 1992)",
   "key": "Dm",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -896,6 +995,7 @@
   "artiest": "Fool's Garden (1995)",
   "key": "Fm",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -905,6 +1005,7 @@
   "artiest": "The Beatles (1970)",
   "key": "C",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-17",
   "goed": false
  },
@@ -914,6 +1015,7 @@
   "artiest": "Bryan Ferry (1976)",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-11-03",
   "goed": false
  },
@@ -923,6 +1025,7 @@
   "artiest": "Mumford & Sons",
   "key": "Dm",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-02",
   "goed": false
  },
@@ -932,6 +1035,7 @@
   "artiest": "Smokie(1976)",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -941,6 +1045,7 @@
   "artiest": "The Kinks (1970)",
   "key": "E",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -950,6 +1055,7 @@
   "artiest": "Creedence Clearwater Revival(1970)",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -959,6 +1065,7 @@
   "artiest": "The Stills-Young Band (1976)",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -968,6 +1075,7 @@
   "artiest": "REM (1991)",
   "key": "F",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -977,6 +1085,7 @@
   "artiest": "Anouk (2005)",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -986,6 +1095,7 @@
   "artiest": "Ernst Jansz",
   "key": "C",
   "repertoire": true,
+  "taal": "NL",
   "toegevoegd": "2026-10-12",
   "goed": false
  },
@@ -995,6 +1105,7 @@
   "artiest": "Steve Harley & Cockney Rebel (1975)",
   "key": "F",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1004,6 +1115,7 @@
   "artiest": "Kris Kristofferson",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-17",
   "goed": false
  },
@@ -1013,6 +1125,7 @@
   "artiest": "The Police",
   "key": "F#m",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-10",
   "goed": false
  },
@@ -1022,6 +1135,7 @@
   "artiest": "The Dubliners",
   "key": "C",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -1031,6 +1145,7 @@
   "artiest": "BEE GEES(1969)",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1040,6 +1155,7 @@
   "artiest": "Nathalie Merchant (2001)",
   "key": "F",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-27",
   "goed": true
  },
@@ -1049,6 +1165,7 @@
   "artiest": "John Denver (Jerry Jeff Walker - 1968)",
   "key": "F#",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-11-01",
   "goed": false
  },
@@ -1058,6 +1175,7 @@
   "artiest": "Wings (1977)",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1067,6 +1185,7 @@
   "artiest": "The Moody Blues (1967)",
   "key": "Em",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-11-02",
   "goed": false
  },
@@ -1076,6 +1195,7 @@
   "artiest": "Herman's Hermits (1966)",
   "key": "Am",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-11-01",
   "goed": false
  },
@@ -1085,6 +1205,7 @@
   "artiest": "Eric Clapton (Unplugged 1992)",
   "key": "C",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1094,6 +1215,7 @@
   "artiest": "Paul McCartney (Beatles)",
   "key": "D",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-17",
   "goed": false
  },
@@ -1103,6 +1225,7 @@
   "artiest": "Ryan Adams (with the Infamous String Dusters & Nicki Bluhm)",
   "key": "C",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-28",
   "goed": false
  },
@@ -1112,6 +1235,7 @@
   "artiest": "Neil Young",
   "key": "D",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-21",
   "goed": false
  },
@@ -1121,6 +1245,7 @@
   "artiest": "Elbow",
   "key": "F",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -1130,6 +1255,7 @@
   "artiest": "Neil Young (1970)",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1139,6 +1265,7 @@
   "artiest": "AI-RootsClub (2026)",
   "key": "G",
   "repertoire": false,
+  "taal": "NL",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1148,6 +1275,7 @@
   "artiest": "Crosby, Stills, Nash & Young (1970)",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1157,6 +1285,7 @@
   "artiest": "Israel Kamakawiwoʻole (1993)",
   "key": "G",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-12",
   "goed": false
  },
@@ -1166,6 +1295,7 @@
   "artiest": "Lou Reed",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-17",
   "goed": false
  },
@@ -1175,6 +1305,7 @@
   "artiest": "Los Lobos (1987)",
   "key": "G",
   "repertoire": true,
+  "taal": "SP",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -1184,6 +1315,7 @@
   "artiest": "B.J. Thomas(1969)",
   "key": "F",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1193,6 +1325,7 @@
   "artiest": "Adri S. (1977 melodie, 2002 tekst, 2026 video)",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-15",
   "goed": false
  },
@@ -1202,6 +1335,7 @@
   "artiest": "Randy Newman",
   "key": "C",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -1211,6 +1345,7 @@
   "artiest": "Ferre Grignard",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -1220,6 +1355,7 @@
   "artiest": "The Rolling Stones {1967)",
   "key": "Am",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-11-03",
   "goed": false
  },
@@ -1229,6 +1365,7 @@
   "artiest": "Fisherman's Friends",
   "key": "C",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-02",
   "goed": false
  },
@@ -1238,6 +1375,7 @@
   "artiest": "Eric Clapton",
   "key": "C",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1247,6 +1385,7 @@
   "artiest": "Eagle Eye Cherry (1998)",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1256,6 +1395,7 @@
   "artiest": "Adele (2011)",
   "key": "Am",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -1265,6 +1405,7 @@
   "artiest": "The Dubliners",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1274,6 +1415,7 @@
   "artiest": "The Radios (1991)",
   "key": "C",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1283,6 +1425,7 @@
   "artiest": "Sade (1984)",
   "key": "Dm",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1292,6 +1435,7 @@
   "artiest": "Leonard Cohen (1967)",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-21",
   "goed": false
  },
@@ -1301,6 +1445,7 @@
   "artiest": "Eddie Vedder",
   "key": "Bm",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-19",
   "goed": false
  },
@@ -1310,6 +1455,7 @@
   "artiest": "Adele (2011)",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1319,6 +1465,7 @@
   "artiest": "Bonnie Owens and Merle Haggard/Tumbleweeds",
   "key": "E",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -1328,6 +1475,7 @@
   "artiest": "Édith Piaf",
   "key": "E",
   "repertoire": false,
+  "taal": "FR",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -1337,6 +1485,7 @@
   "artiest": "Eric Burdon & War / Animals (1970)",
   "key": "F",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1346,6 +1495,7 @@
   "artiest": "Tammy Wynette",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1355,6 +1505,7 @@
   "artiest": "The Irish Rovers",
   "key": "E",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-11",
   "goed": false
  },
@@ -1364,6 +1515,7 @@
   "artiest": "The Fureys (1983)",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1373,6 +1525,7 @@
   "artiest": "Ralph McTell",
   "key": "D",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-11-01",
   "goed": false
  },
@@ -1382,6 +1535,7 @@
   "artiest": "Leonard Cohen",
   "key": "E",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-11-01",
   "goed": false
  },
@@ -1391,6 +1545,7 @@
   "artiest": "Blues Brothers",
   "key": "E",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-26",
   "goed": false
  },
@@ -1400,6 +1555,7 @@
   "artiest": "Eric Clapton",
   "key": "E",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-26",
   "goed": false
  },
@@ -1409,6 +1565,7 @@
   "artiest": "Leonard Cohen (1986)",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1418,6 +1575,7 @@
   "artiest": "Crosby, Stills, Nash & Young (1969)",
   "key": "D",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-11-01",
   "goed": false
  },
@@ -1427,6 +1585,7 @@
   "artiest": "The Champs (1958)",
   "key": "E",
   "repertoire": false,
+  "taal": "SP",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1436,6 +1595,7 @@
   "artiest": "Simon & Garfunkel (1969)",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1445,6 +1605,7 @@
   "artiest": "Mumford & Sons",
   "key": "E",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-11",
   "goed": false
  },
@@ -1454,6 +1615,7 @@
   "artiest": "Liam Clancy",
   "key": "C",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-19",
   "goed": false
  },
@@ -1463,6 +1625,7 @@
   "artiest": "The Dubliners",
   "key": "E",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-27",
   "goed": false
  },
@@ -1472,6 +1635,7 @@
   "artiest": "The Pogues feat. The Dubliners",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1481,6 +1645,7 @@
   "artiest": "Steve Miller Band (1973)",
   "key": "F",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-06",
   "goed": false
  },
@@ -1490,6 +1655,7 @@
   "artiest": "The Dubliners",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1499,6 +1665,7 @@
   "artiest": "Creedence Clearwater Revival  1969 (Willy and the Poor Boys - Leadbelly)",
   "key": "D",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -1508,6 +1675,7 @@
   "artiest": "Iggy Pop",
   "key": "Am",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-23",
   "goed": false
  },
@@ -1517,6 +1685,7 @@
   "artiest": "Dubliners",
   "key": "Bb",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1526,6 +1695,7 @@
   "artiest": "SIENNA SPIRO (2026)",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1535,6 +1705,7 @@
   "artiest": "The Band (1968)",
   "key": "A",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1544,6 +1715,7 @@
   "artiest": "The Dubliners",
   "key": "G",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-12",
   "goed": false
  },
@@ -1553,6 +1725,7 @@
   "artiest": "J. J. Cale (1972)",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1562,6 +1735,7 @@
   "artiest": "Dave Berry (1965)",
   "key": "Em",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1571,6 +1745,7 @@
   "artiest": "Johnny Cash, Jerry Lee Lewis, Roy Orbison, Carl Perkins",
   "key": "Eb",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-12",
   "goed": false
  },
@@ -1580,6 +1755,7 @@
   "artiest": "The Kingston Trio (1959)",
   "key": "E",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -1589,6 +1765,7 @@
   "artiest": "Amanda Strydom/Stef Bos",
   "key": "G",
   "repertoire": false,
+  "taal": "NL",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -1598,6 +1775,7 @@
   "artiest": "Michel Fugain",
   "key": "Am",
   "repertoire": false,
+  "taal": "FR",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -1607,6 +1785,7 @@
   "artiest": "Shocking Blue (1969)",
   "key": "E",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1616,6 +1795,7 @@
   "artiest": "Avicii (2013)",
   "key": "Bm",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1625,6 +1805,7 @@
   "artiest": "Lou Reed (1972)",
   "key": "C",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1634,6 +1815,7 @@
   "artiest": "Misc Traditional (Banjo Paterson 1895)",
   "key": "C",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-12",
   "goed": false
  },
@@ -1643,6 +1825,7 @@
   "artiest": "Bots (1976)",
   "key": "Am",
   "repertoire": false,
+  "taal": "NL",
   "toegevoegd": "2026-11-01",
   "goed": false
  },
@@ -1652,6 +1835,7 @@
   "artiest": "Louis Armstrong (Capo op V voor grepen hieronder)",
   "key": "F",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-12",
   "goed": false
  },
@@ -1661,6 +1845,7 @@
   "artiest": "McGuinness Flint",
   "key": "D",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-11-02",
   "goed": false
  },
@@ -1670,6 +1855,7 @@
   "artiest": "Beatles (1967)",
   "key": "C",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-12",
   "goed": false
  },
@@ -1679,6 +1865,7 @@
   "artiest": "U2 Bono & The Corrs (Ryan Adams)",
   "key": "Cm",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-23",
   "goed": false
  },
@@ -1688,6 +1875,7 @@
   "artiest": "versie The Dubliners (1967)",
   "key": "C",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-12",
   "goed": false
  },
@@ -1697,6 +1885,7 @@
   "artiest": "Creedence Clearwater Revival (1970)",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-11-01",
   "goed": false
  },
@@ -1706,6 +1895,7 @@
   "artiest": "Chris Isaak (1989)",
   "key": "Bm",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1715,6 +1905,7 @@
   "artiest": "The Byrds (1966)",
   "key": "G",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-12",
   "goed": false
  },
@@ -1724,6 +1915,7 @@
   "artiest": "Filips van Marnix van Sint-Aldegonde",
   "key": "G",
   "repertoire": false,
+  "taal": "NL",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -1733,6 +1925,7 @@
   "artiest": "Little Feat",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-20",
   "goed": false
  },
@@ -1742,6 +1935,7 @@
   "artiest": "Willy Alberti/Johnny Jordaan (1975)",
   "key": "F",
   "repertoire": false,
+  "taal": "NL",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1751,6 +1945,7 @@
   "artiest": "Katie Melua (2014)",
   "key": "Gm",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-20",
   "goed": false
  },
@@ -1760,6 +1955,7 @@
   "artiest": "Eric Clapton (1977)",
   "key": "G",
   "repertoire": true,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -1769,6 +1965,7 @@
   "artiest": "The Byrds (1968) - (Bob Dylan)",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -1778,6 +1975,7 @@
   "artiest": "Luka Bloom",
   "key": "G",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1787,6 +1985,7 @@
   "artiest": "You've Got A Friend",
   "key": "E",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1796,6 +1995,7 @@
   "artiest": "Mistero Buffo (1983)",
   "key": "G",
   "repertoire": true,
+  "taal": "NL",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -1805,6 +2005,7 @@
   "artiest": "The Cranberries (1994)",
   "key": "Em",
   "repertoire": false,
+  "taal": "",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1814,6 +2015,7 @@
   "artiest": "BLØF (2017)",
   "key": "Em",
   "repertoire": false,
+  "taal": "NL",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1823,6 +2025,7 @@
   "artiest": "Joe Dassint (1976)",
   "key": "G",
   "repertoire": false,
+  "taal": "FR",
   "toegevoegd": "2026-10-01",
   "goed": false
  }

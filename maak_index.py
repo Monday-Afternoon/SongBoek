@@ -41,12 +41,16 @@ for f in sorted(map_songs.glob("*.html")):
             toegevoegd = vandaag
         else:
             toegevoegd = datetime.date.fromtimestamp(f.stat().st_mtime).isoformat()
+    # taal: NL, FR of SP (ES wordt ook als SP herkend); leeg = Engels/overig
+    taal = meta.get("taal", "").strip().upper()
+    taal = {"ES": "SP", "NEDERLANDS": "NL", "FRANS": "FR", "SPAANS": "SP"}.get(taal, taal)
     items.append({
         "bestand": f.name,
         "titel": meta.get("titel") or f.stem,
         "artiest": artiest,
         "key": k.group(1).strip() if k else "",
         "repertoire": meta.get("repertoire", "").lower() in ("ja", "yes", "true", "1", "x", "waar"),
+        "taal": taal,
         "toegevoegd": toegevoegd,
         "goed": meta.get("goed", "").lower() in ("ja", "yes", "true", "1", "x", "waar"),
     })
