@@ -345,7 +345,7 @@
   "artiest": "Van Morrison",
   "key": "Am",
   "repertoire": true,
-  "taal": "",
+  "taal": "IERS",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -470,13 +470,13 @@
   "goed": false
  },
  {
-  "bestand": "Dirty Old Town (met video).html",
+  "bestand": "Dirty Old Town.html",
   "titel": "Dirty Old Town",
   "artiest": "The Pogues",
   "key": "D",
   "repertoire": false,
-  "taal": "",
-  "toegevoegd": "2026-10-01",
+  "taal": "IERS",
+  "toegevoegd": "2026-11-08",
   "goed": false
  },
  {
@@ -515,7 +515,7 @@
   "artiest": "Maura O'Connell",
   "key": "G",
   "repertoire": true,
-  "taal": "",
+  "taal": "IERS",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -610,16 +610,6 @@
   "goed": false
  },
  {
-  "bestand": "Green Fields of France.html",
-  "titel": "Green Fields of France",
-  "artiest": "The Fureys",
-  "key": "F",
-  "repertoire": true,
-  "taal": "",
-  "toegevoegd": "2026-10-18",
-  "goed": false
- },
- {
   "bestand": "Guantanamera.html",
   "titel": "Guantanamera",
   "artiest": "The Mavericks and Raul Malo",
@@ -655,7 +645,7 @@
   "artiest": "(Stephen Foster 1854) The Chieftains (2012)",
   "key": "D",
   "repertoire": true,
-  "taal": "",
+  "taal": "IERS",
   "toegevoegd": "2026-10-27",
   "goed": true
  },
@@ -895,7 +885,7 @@
   "artiest": "Greg Trooper (2003)",
   "key": "C",
   "repertoire": true,
-  "taal": "",
+  "taal": "IERS",
   "toegevoegd": "2026-10-27",
   "goed": false
  },
@@ -1575,7 +1565,7 @@
   "artiest": "The Irish Rovers",
   "key": "E",
   "repertoire": false,
-  "taal": "",
+  "taal": "IERS",
   "toegevoegd": "2026-10-11",
   "goed": false
  },
@@ -1585,7 +1575,7 @@
   "artiest": "The Fureys (1983)",
   "key": "G",
   "repertoire": false,
-  "taal": "",
+  "taal": "IERS",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1695,7 +1685,7 @@
   "artiest": "Liam Clancy",
   "key": "C",
   "repertoire": true,
-  "taal": "",
+  "taal": "IERS",
   "toegevoegd": "2026-10-19",
   "goed": false
  },
@@ -1715,7 +1705,17 @@
   "artiest": "The Wolfetones",
   "key": "Bm",
   "repertoire": false,
-  "taal": "",
+  "taal": "IERS",
+  "toegevoegd": "2026-11-08",
+  "goed": false
+ },
+ {
+  "bestand": "The Green Fields of France.html",
+  "titel": "The Green Fields of France",
+  "artiest": "The Fureys",
+  "key": "F",
+  "repertoire": true,
+  "taal": "IERS",
   "toegevoegd": "2026-11-08",
   "goed": false
  },
@@ -1804,8 +1804,8 @@
   "titel": "The Wild Rover",
   "artiest": "The Dubliners",
   "key": "G",
-  "repertoire": false,
-  "taal": "",
+  "repertoire": true,
+  "taal": "IERS",
   "toegevoegd": "2026-10-12",
   "goed": false
  },
@@ -1975,7 +1975,7 @@
   "artiest": "U2 Bono & The Corrs (Ryan Adams)",
   "key": "Cm",
   "repertoire": false,
-  "taal": "",
+  "taal": "IERS",
   "toegevoegd": "2026-10-23",
   "goed": false
  },
@@ -2015,7 +2015,7 @@
   "artiest": "The Byrds (1966)",
   "key": "G",
   "repertoire": true,
-  "taal": "",
+  "taal": "IERS",
   "toegevoegd": "2026-10-12",
   "goed": false
  },
@@ -2085,7 +2085,7 @@
   "artiest": "Luka Bloom",
   "key": "G",
   "repertoire": false,
-  "taal": "",
+  "taal": "IERS",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -2115,7 +2115,7 @@
   "artiest": "The Cranberries (1994)",
   "key": "Em",
   "repertoire": false,
-  "taal": "",
+  "taal": "IERS",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
