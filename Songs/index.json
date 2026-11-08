@@ -1630,6 +1630,16 @@
   "goed": false
  },
  {
+  "bestand": "Thank You.html",
+  "titel": "Thank You",
+  "artiest": "Dido",
+  "key": "G#m",
+  "repertoire": false,
+  "taal": "",
+  "toegevoegd": "2026-11-08",
+  "goed": false
+ },
+ {
   "bestand": "The Boxer.html",
   "titel": "THE BOXER",
   "artiest": "Simon & Garfunkel (1969)",
@@ -1767,6 +1777,16 @@
   "repertoire": false,
   "taal": "",
   "toegevoegd": "2026-10-01",
+  "goed": false
+ },
+ {
+  "bestand": "This Is The Life.html",
+  "titel": "This Is The Life",
+  "artiest": "Amy Macdonald",
+  "key": "G#m",
+  "repertoire": false,
+  "taal": "",
+  "toegevoegd": "2026-11-08",
   "goed": false
  },
  {
