@@ -35,7 +35,7 @@
   "artiest": "The Dubliners",
   "key": "G",
   "repertoire": false,
-  "taal": "",
+  "taal": "IERS",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -215,7 +215,7 @@
   "artiest": "The Dubliners",
   "key": "G",
   "repertoire": false,
-  "taal": "",
+  "taal": "IERS",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -740,6 +740,16 @@
   "goed": false
  },
  {
+  "bestand": "Het Regent Zonnestralen.html",
+  "titel": "Het Regent Zonnestralen",
+  "artiest": "Acda en de Munnik",
+  "key": "G",
+  "repertoire": false,
+  "taal": "NL",
+  "toegevoegd": "2026-11-08",
+  "goed": false
+ },
+ {
   "bestand": "Hi Ho Silver Lining.html",
   "titel": "Hi Ho Silver Lining",
   "artiest": "Jeff Beck",
@@ -1165,7 +1175,7 @@
   "artiest": "The Dubliners",
   "key": "C",
   "repertoire": true,
-  "taal": "",
+  "taal": "IERS",
   "toegevoegd": "2026-10-18",
   "goed": false
  },
@@ -1247,6 +1257,16 @@
   "repertoire": false,
   "taal": "",
   "toegevoegd": "2026-10-17",
+  "goed": false
+ },
+ {
+  "bestand": "Oh Danny Boy.html",
+  "titel": "Oh Danny Boy",
+  "artiest": "Frederic Weatherly (1913)",
+  "key": "C",
+  "repertoire": false,
+  "taal": "IERS",
+  "toegevoegd": "2026-11-08",
   "goed": false
  },
  {
@@ -1445,7 +1465,7 @@
   "artiest": "The Dubliners",
   "key": "A",
   "repertoire": false,
-  "taal": "",
+  "taal": "IERS",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1685,8 +1705,18 @@
   "artiest": "The Dubliners",
   "key": "E",
   "repertoire": true,
-  "taal": "",
+  "taal": "IERS",
   "toegevoegd": "2026-10-27",
+  "goed": false
+ },
+ {
+  "bestand": "The Foggy Dew.html",
+  "titel": "The Foggy Dew",
+  "artiest": "The Wolfetones",
+  "key": "Bm",
+  "repertoire": false,
+  "taal": "",
+  "toegevoegd": "2026-11-08",
   "goed": false
  },
  {
@@ -1695,7 +1725,7 @@
   "artiest": "The Pogues feat. The Dubliners",
   "key": "G",
   "repertoire": false,
-  "taal": "",
+  "taal": "IERS",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1715,7 +1745,7 @@
   "artiest": "The Dubliners",
   "key": "A",
   "repertoire": false,
-  "taal": "",
+  "taal": "IERS",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1745,7 +1775,7 @@
   "artiest": "Dubliners",
   "key": "Bb",
   "repertoire": false,
-  "taal": "",
+  "taal": "IERS",
   "toegevoegd": "2026-10-01",
   "goed": false
  },
@@ -1774,7 +1804,7 @@
   "titel": "The Wild Rover",
   "artiest": "The Dubliners",
   "key": "G",
-  "repertoire": true,
+  "repertoire": false,
   "taal": "",
   "toegevoegd": "2026-10-12",
   "goed": false
@@ -1955,7 +1985,7 @@
   "artiest": "versie The Dubliners (1967)",
   "key": "C",
   "repertoire": true,
-  "taal": "",
+  "taal": "IERS",
   "toegevoegd": "2026-10-12",
   "goed": false
  },

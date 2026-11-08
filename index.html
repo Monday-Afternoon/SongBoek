@@ -162,7 +162,7 @@ const INST = Object.assign({titel: 'Songboek', tabbladTitel: 'Songboek'}, window
 const toestand = {};   // onthoudt key en capo per song tijdens het bezoek
 const PDFJS = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/';
 let terugNaar = '#';   // waar de terug-link van een song heen gaat (overzicht of repertoire)
-const TALEN = {NL: 'Nederlandstalige songs', FR: 'Franstalige songs', SP: 'Spaanstalige songs' , D: 'Duitstalige songs'};
+const TALEN = {NL: 'Nederlandstalige songs', FR: 'Franstalige songs', SP: 'Spaanstalige songs' , Iers: 'Ierse songs' , D: 'Duitstalige songs'};
 const terugLink = () => `<a class="terug" href="${terugNaar}">‹ ${terugNaar === '#repertoire' ? 'Repertoire' : terugNaar === '#nieuw' ? 'Nieuwste songs' : terugNaar.startsWith('#taal/') ? TALEN[terugNaar.slice(6)] || 'Taal' : 'Alle songs'}</a>`;
 
 // GitHub Pages let op hoofdletters: zoek de map 'songs' of 'Songs'
