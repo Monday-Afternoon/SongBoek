@@ -180,6 +180,16 @@
   "goed": false
  },
  {
+  "bestand": "Bailando.html",
+  "titel": "Bailando",
+  "artiest": "Enrique Iglesias (ft. Descemer Bueno, Gente De Zona)",
+  "key": "Em",
+  "repertoire": false,
+  "taal": "SP",
+  "toegevoegd": "2026-11-08",
+  "goed": false
+ },
+ {
   "bestand": "Bankers Blues.html",
   "titel": "Bankers Blues",
   "artiest": "Rory Gallagher (1973)",
@@ -443,7 +453,7 @@
   "bestand": "De Monniken.html",
   "titel": "De Monniken",
   "artiest": "Jaap Fischer (1961)",
-  "key": "C",
+  "key": "D",
   "repertoire": false,
   "taal": "NL",
   "toegevoegd": "2026-10-03",
