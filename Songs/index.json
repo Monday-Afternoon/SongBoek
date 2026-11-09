@@ -7,7 +7,7 @@
   "repertoire": true,
   "taal": "",
   "toegevoegd": "2026-10-18",
-  "goed": false
+  "goed": true
  },
  {
   "bestand": "99 Luftballons.html",
@@ -347,6 +347,16 @@
   "repertoire": false,
   "taal": "",
   "toegevoegd": "2026-10-18",
+  "goed": false
+ },
+ {
+  "bestand": "Carrickfergus (M.A. versie).html",
+  "titel": "Carrickfergus (M.A. versie)",
+  "artiest": "Van Morrison",
+  "key": "G",
+  "repertoire": true,
+  "taal": "IERS",
+  "toegevoegd": "2026-11-09",
   "goed": false
  },
  {
