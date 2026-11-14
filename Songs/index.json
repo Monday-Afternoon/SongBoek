@@ -420,6 +420,16 @@
   "goed": false
  },
  {
+  "bestand": "Counting Stars.html",
+  "titel": "Counting Stars",
+  "artiest": "OneRepublic",
+  "key": "C#",
+  "repertoire": false,
+  "taal": "",
+  "toegevoegd": "2026-11-14",
+  "goed": false
+ },
+ {
   "bestand": "Cry Me A River.html",
   "titel": "Cry Me A River",
   "artiest": "Julie London",
@@ -802,7 +812,7 @@
  {
   "bestand": "Honky Tonk Women.html",
   "titel": "Honky Tonk Women",
-  "artiest": "The Rolling Stones",
+  "artiest": "The Rolling Stones (1969)",
   "key": "G",
   "repertoire": false,
   "taal": "",
