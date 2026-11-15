@@ -2010,13 +2010,23 @@
   "goed": false
  },
  {
-  "bestand": "What A Wonderful World.html",
-  "titel": "What A Wonderful World",
-  "artiest": "Louis Armstrong (Capo op V voor grepen hieronder)",
+  "bestand": "What A Wonderful World (Armstrong).html",
+  "titel": "What A Wonderful World (Armstrong)",
+  "artiest": "Louis Armstrong",
   "key": "F",
   "repertoire": true,
   "taal": "",
-  "toegevoegd": "2026-10-12",
+  "toegevoegd": "2026-11-15",
+  "goed": false
+ },
+ {
+  "bestand": "What A Wonderful World (Sam Cooke).html",
+  "titel": "What A Wonderful World (Sam Cooke)",
+  "artiest": "Sam Cooke",
+  "key": "B",
+  "repertoire": false,
+  "taal": "",
+  "toegevoegd": "2026-11-15",
   "goed": false
  },
  {
