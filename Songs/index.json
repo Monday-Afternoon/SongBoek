@@ -200,6 +200,16 @@
   "goed": false
  },
  {
+  "bestand": "Bird on a Wire.html",
+  "titel": "Bird on a Wire",
+  "artiest": "Leonard Cohen",
+  "key": "A",
+  "repertoire": false,
+  "taal": "",
+  "toegevoegd": "2026-11-16",
+  "goed": false
+ },
+ {
   "bestand": "Black Girl (In The Pines).html",
   "titel": "Black Girl (In The Pines)",
   "artiest": "Lead Belly 1944",
@@ -334,7 +344,7 @@
   "titel": "Buona Sera Signorina Buona Sera",
   "artiest": "Louis Prima",
   "key": "D#",
-  "repertoire": true,
+  "repertoire": false,
   "taal": "SP",
   "toegevoegd": "2026-10-18",
   "goed": false
