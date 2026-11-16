@@ -647,7 +647,7 @@
   "repertoire": true,
   "taal": "",
   "toegevoegd": "2026-10-18",
-  "goed": false
+  "goed": true
  },
  {
   "bestand": "Green Eyes.html",
@@ -1784,7 +1784,7 @@
   "titel": "The Final Trawl",
   "artiest": "The Ways of Man",
   "key": "G#",
-  "repertoire": false,
+  "repertoire": true,
   "taal": "IERS",
   "toegevoegd": "2026-11-12",
   "goed": false
