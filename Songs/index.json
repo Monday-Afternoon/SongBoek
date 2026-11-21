@@ -1220,6 +1220,16 @@
   "goed": false
  },
  {
+  "bestand": "Like A Rolling Stone.html",
+  "titel": "Like A Rolling Stone",
+  "artiest": "Bob Dylan (1965)",
+  "key": "C",
+  "repertoire": false,
+  "taal": "",
+  "toegevoegd": "2026-11-22",
+  "goed": false
+ },
+ {
   "bestand": "Little Lion Man.html",
   "titel": "Little Lion Man",
   "artiest": "Mumford & Sons",
@@ -1517,6 +1527,16 @@
   "repertoire": true,
   "taal": "",
   "toegevoegd": "2026-10-12",
+  "goed": false
+ },
+ {
+  "bestand": "Peaceful Easy Feelin'.html",
+  "titel": "Peaceful Easy Feelin'",
+  "artiest": "Jack Tempchin (1978)",
+  "key": "C",
+  "repertoire": false,
+  "taal": "",
+  "toegevoegd": "2026-11-21",
   "goed": false
  },
  {
@@ -1867,6 +1887,16 @@
   "repertoire": false,
   "taal": "",
   "toegevoegd": "2026-10-26",
+  "goed": false
+ },
+ {
+  "bestand": "Take It Easy.html",
+  "titel": "Take It Easy",
+  "artiest": "Jackson Browne",
+  "key": "G",
+  "repertoire": false,
+  "taal": "",
+  "toegevoegd": "2026-11-21",
   "goed": false
  },
  {
