@@ -404,7 +404,7 @@
   "titel": "Carrickfergus",
   "artiest": "Van Morrison",
   "key": "Am",
-  "repertoire": true,
+  "repertoire": false,
   "taal": "IERS",
   "toegevoegd": "2026-10-18",
   "goed": false
@@ -1030,14 +1030,24 @@
   "goed": false
  },
  {
-  "bestand": "Inisheer.html",
-  "titel": "Inisheer",
+  "bestand": "Inisheer - M.A.Versie.html",
+  "titel": "Inisheer - M.A.Versie",
   "artiest": "Greg Trooper (2003)",
   "key": "C",
   "repertoire": true,
   "taal": "IERS",
+  "toegevoegd": "2026-11-23",
+  "goed": true
+ },
+ {
+  "bestand": "Inisheer.html",
+  "titel": "Inisheer",
+  "artiest": "Greg Trooper (2003)",
+  "key": "C",
+  "repertoire": false,
+  "taal": "IERS",
   "toegevoegd": "2026-10-27",
-  "goed": false
+  "goed": true
  },
  {
   "bestand": "Iris.html",
@@ -1310,11 +1320,21 @@
   "goed": false
  },
  {
+  "bestand": "Luna Luna Mijn - M.A.Versie.html",
+  "titel": "Luna Luna Mijn - M.A.Versie",
+  "artiest": "Ernst Jansz (M.A.Versie)",
+  "key": "C",
+  "repertoire": true,
+  "taal": "NL",
+  "toegevoegd": "2026-11-23",
+  "goed": true
+ },
+ {
   "bestand": "Luna Luna Mijn.html",
   "titel": "Luna Luna Mijn",
   "artiest": "Ernst Jansz",
   "key": "C",
-  "repertoire": true,
+  "repertoire": false,
   "taal": "NL",
   "toegevoegd": "2026-10-12",
   "goed": false
@@ -2004,7 +2024,7 @@
   "titel": "The Final Trawl",
   "artiest": "The Ways of Man",
   "key": "G#",
-  "repertoire": true,
+  "repertoire": false,
   "taal": "IERS",
   "toegevoegd": "2026-11-12",
   "goed": false
