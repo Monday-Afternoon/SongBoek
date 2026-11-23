@@ -53,6 +53,9 @@ button.noten{font:inherit;background:transparent;cursor:pointer}
 .ly{white-space:pre;min-height:1.4em}
 .akk{margin:0 0 .35em}.akk .ch{display:inline-block;padding-right:1em}
 .leeg{height:.4em}
+.tokkel{margin:1.4em 0 1.8em}.tokkel h2{font-size:1.1em;margin:0 0 .4em}
+.tokkel.gekozen{outline:2px solid var(--chord);outline-offset:6px;border-radius:6px}
+.tokkel .scan{max-width:100%;border-radius:6px}
 .tab{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono','Courier New',monospace;font-size:.95em;line-height:1.25;white-space:pre;overflow-x:auto;margin:.3em 0 .8em;padding:6px 10px;background:var(--card);border:1px solid var(--line);border-radius:6px}
 .fout{padding:14px;border:1px solid var(--line);border-radius:6px;background:var(--card)}
 </style>
@@ -171,7 +174,7 @@ const toestand = {};   // onthoudt key en capo per song tijdens het bezoek
 const PDFJS = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/';
 let terugNaar = '#';   // waar de terug-link van een song heen gaat (overzicht of repertoire)
 const TALEN = {NL: 'Nederlandstalige songs', FR: 'Franstalige songs', SP: 'Spaanstalige songs', IERS: 'Ierse songs', D: 'Duitse songs'};
-const TAALKNOP = {IERS: 'IERS'};   // tekst op het knopje (standaard de code zelf)
+const TAALKNOP = {IERS: 'Iers'};   // tekst op het knopje (standaard de code zelf)
 const terugLink = () => `<a class="terug" href="${terugNaar}">‹ ${terugNaar === '#repertoire' ? 'Repertoire' : terugNaar === '#nieuw' ? 'Nieuwste songs' : terugNaar.startsWith('#taal/') ? TALEN[terugNaar.slice(6)] || 'Taal' : 'Alle songs'}</a>`;
 
 // GitHub Pages let op hoofdletters: zoek de map 'songs' of 'Songs'
@@ -187,7 +190,9 @@ function songsMap() {
 }
 
 // goed: ja  (ook 'true', '1' of 'x') in de <meta> = deze song gaat al goed
-const AKKOORDEN_LINK = '<a class="noten" href="https://www.sixstrings.nl/akkoorden" target="_blank" rel="noopener">🎸 Akkoorden opzoeken</a>';
+const AKKOORDEN_LINK = '<a class="noten" href="https://www.sixstrings.nl/akkoorden" target="_blank" rel="noopener">🎸 Akkoorden</a>';
+const TOKKEL_LINK = '<a class="noten" href="#tokkels">🎶 Tokkel</a>';
+const TABREGEL = /^\s*[eEBGDAa][#b]?\s*\|[-0-9\s|hpbrxs\/\\~^()*.<>:]*$/;
 const isGoed = v => /^(ja|true|1|x)$/i.test(String(v == null ? '' : v).trim());
 
 async function toonOverzicht(modus = 'alle') {
@@ -201,7 +206,7 @@ async function toonOverzicht(modus = 'alle') {
     ? '<a class="terug" href="#">‹ Alle songs</a><div class="kop"><h1>De 10 nieuwste songs</h1>' + AKKOORDEN_LINK + '</div>'
     : taal
     ? '<a class="terug" href="#">‹ Alle songs</a><div class="kop"><h1>' + esc(TALEN[taal] || taal) + '</h1>' + AKKOORDEN_LINK + '</div>'
-    : '<div class="kop"><h1>' + esc(INST.titel) + '</h1><span class="notenrij" style="margin:0"><a class="noten" href="#nieuw">🆕 Laatste 10</a><a class="noten" href="#repertoire">★ In ons repertoire</a>' + Object.keys(TALEN).map(t => '<a class="noten klein" href="#taal/' + t + '" title="' + TALEN[t] + '">' + (TAALKNOP[t] || t) + '</a>').join('') + AKKOORDEN_LINK + '</span></div>') + '<input type="search" id="zoek" placeholder="Zoek op titel of artiest" aria-label="Zoeken"' + (nieuw ? ' style="display:none"' : '') + '><div class="lijst' + (rep ? ' compact' : '') + '" id="lijst"></div>';
+    : '<div class="kop"><h1>' + esc(INST.titel) + '</h1><span class="notenrij" style="margin:0"><a class="noten" href="#nieuw">🆕 Laatste 10</a><a class="noten" href="#repertoire">★ In ons repertoire</a>' + Object.keys(TALEN).map(t => '<a class="noten klein" href="#taal/' + t + '" title="' + TALEN[t] + '">' + (TAALKNOP[t] || t) + '</a>').join('') + AKKOORDEN_LINK + TOKKEL_LINK + '</span></div>') + '<input type="search" id="zoek" placeholder="Zoek op titel of artiest" aria-label="Zoeken"' + (nieuw ? ' style="display:none"' : '') + '><div class="lijst' + (rep ? ' compact' : '') + '" id="lijst"></div>';
   let songs;
   try {
     const r = await fetch((await songsMap()) + '/index.json', {cache:'no-cache'});
@@ -335,13 +340,17 @@ async function toonSong(bestand) {
     })
     .join('');
 
+  // tokkel: T2  (of T2, T3) in <meta> = knop naar het bijpassende tokkelpatroon
+  const tokkelKnoppen = (song.meta.tokkel || '').split(/[,\s]+/).filter(Boolean)
+    .map(t => `<a class="noten" href="#tokkels/${encodeURIComponent(t)}">🎶 Tokkel ${esc(t)}</a>`).join('');
+
   app.innerHTML = `${terugLink()}
     <h1>${esc(titel)}</h1>
     <p class="info">${esc(song.meta.artiest || artiestUitKop(song.kop))}</p>
     <p class="info" id="keyinfo"></p>
     ${song.capo ? `<p class="info">${esc(song.capo)}</p>` : ''}
     <div class="bedien" id="bedien"></div>
-    <div class="notenrij">${notenKnoppen}${AKKOORDEN_LINK}</div>
+    <div class="notenrij">${notenKnoppen}${tokkelKnoppen}${AKKOORDEN_LINK}</div>
     ${vid ? `<iframe class="video" src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(vid)}" title="Video bij ${esc(titel)}" allow="encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>` : ''}
     <div class="tekst" id="tekst"></div>`;
   if (song.meta.lettertype) document.getElementById('tekst').style.fontFamily = `"${song.meta.lettertype}", system-ui, sans-serif`;
@@ -389,10 +398,62 @@ async function toonSong(bestand) {
   teken();
 }
 
+// ---- Tokkelpagina: leest songs/tokkels.txt ----
+function parseTokkels(tekst) {
+  const blokken = [];
+  for (const raw of tekst.split(/\r?\n/)) {
+    const r = raw.replace(/\s+$/, '');
+    let m;
+    if ((m = r.trim().match(/^<t>(.*)<\/t>$/i))) {
+      const titel = m[1].trim();
+      const n = titel.match(/^(T\d+)\b/i);
+      blokken.push({titel, nr: n ? n[1].toUpperCase() : '', regels: []});
+      continue;
+    }
+    const b = blokken[blokken.length - 1];
+    if (!b) continue;
+    if (!r.trim()) { b.regels.push({t: 'leeg'}); continue; }
+    if ((m = r.trim().match(/^plaatje:\s*(.+)$/i))) { b.regels.push({t: 'img', f: m[1].trim()}); continue; }
+    if (TABREGEL.test(r)) {
+      const v = b.regels[b.regels.length - 1];
+      if (v && v.t === 'tab') v.tekst += '\n' + r; else b.regels.push({t: 'tab', tekst: r});
+      continue;
+    }
+    b.regels.push({t: 'tekst', tekst: r.trim()});
+  }
+  return blokken;
+}
+async function toonTokkels(nr) {
+  terugNaar = '#';
+  document.title = 'Tokkels – ' + INST.tabbladTitel;
+  app.innerHTML = '<p class="info">Laden…</p>';
+  const map = await songsMap();
+  let blokken;
+  try {
+    const r = await fetch(map + '/tokkels.txt', {cache: 'no-cache'});
+    if (!r.ok) throw new Error(r.status);
+    blokken = parseTokkels(await r.text());
+  } catch (e) {
+    app.innerHTML = '<a class="terug" href="#">‹ Alle songs</a><div class="fout">Het bestand <b>tokkels.txt</b> staat nog niet in de map songs.</div>';
+    return;
+  }
+  const kiezer = blokken.filter(b => b.nr).map(b => `<a class="noten klein" href="#tokkels/${b.nr}">${b.nr}</a>`).join('');
+  app.innerHTML = '<a class="terug" href="#">‹ Alle songs</a><div class="kop"><h1>Tokkels</h1>' + AKKOORDEN_LINK + '</div>' +
+    (kiezer ? '<div class="notenrij">' + kiezer + '</div>' : '') +
+    blokken.map(b => `<section class="tokkel${b.nr && b.nr === nr ? ' gekozen' : ''}" id="tokkel-${esc(b.nr || '')}">
+      <h2>${esc(b.titel)}</h2>` + b.regels.map(r =>
+        r.t === 'tab' ? `<pre class="tab">${esc(r.tekst)}</pre>` :
+        r.t === 'img' ? `<img class="scan" src="${esc(map + '/' + encodeURIComponent(r.f))}" alt="${esc(b.titel)}">` :
+        r.t === 'tekst' ? `<div class="regel">${esc(r.tekst)}</div>` : '<div class="leeg"></div>').join('') + '</section>').join('');
+  const doel = nr && document.getElementById('tokkel-' + nr);
+  if (doel) setTimeout(() => doel.scrollIntoView({block: 'start'}), 0);
+}
+
 function route() {
   if (huidigGeluid) { huidigGeluid.pause(); huidigGeluid = null; }
   if (location.hash === '#repertoire') toonOverzicht('rep');
   else if (location.hash === '#nieuw') toonOverzicht('nieuw');
+  else if (location.hash === '#tokkels' || location.hash.startsWith('#tokkels/')) toonTokkels(decodeURIComponent(location.hash.slice(9)).toUpperCase());
   else if (location.hash.startsWith('#taal/')) toonOverzicht('taal-' + decodeURIComponent(location.hash.slice(6)).toUpperCase());
   else if (location.hash.startsWith('#bekijk/')) {
     const d = location.hash.slice(1).split('/').map(decodeURIComponent);

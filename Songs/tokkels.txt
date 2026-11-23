@@ -1,0 +1,60 @@
+<t>Zo oefen je een tokkel</t>
+Begin op één akkoord en speel heel traag. Pas als het soepel gaat voeg je akkoordwissels toe.
+Elke vinger heeft zijn eigen snaar: p = duim (lage snaren), i = wijsvinger (G-snaar), m = middelvinger (B-snaar), a = ringvinger (dunne e-snaar).
+Zet een metronoom op ongeveer 60 slagen per minuut en bouw rustig op.
+
+<t>T1 · p i m a (kwartnoten, 4/4)</t>
+De beginnerstokkel. Eén noot per tel.
+Vingers: p i m a
+Tel: 1 – 2 – 3 – 4
+
+Am
+e|-----------0|
+B|--------1---|
+G|-----2------|
+D|------------|
+A|--0---------|
+E|------------|
+
+<t>T2 · p i m a m i (rollend, 6 achtsten)</t>
+Een rollend patroon dat heen en weer gaat. Past bij 3/4 of 6/8.
+Vingers: p i m a m i
+Tel: 1 en 2 en 3 en
+
+Am
+e|-------0----|
+B|-----1---1--|
+G|---2-------2|
+D|------------|
+A|-0----------|
+E|------------|
+
+<t>T3 · Wisselbas (8 achtsten, 4/4)</t>
+De basis van veel folk. De duim wisselt tussen de A- en D-snaar, i en m spelen daartussen.
+Vingers: p i p m p i p m
+Tel: 1 en 2 en 3 en 4 en
+
+C
+e|----------------|
+B|-------1-------1|
+G|---0-------0----|
+D|-----2-------2--|
+A|-3-------3------|
+E|----------------|
+
+<t>T4 · Wals (3/4)</t>
+De duim speelt de bas, daarna volgen twee keer drie snaren tegelijk.
+Vingers: p, dan i-m-a samen, dan nog een keer i-m-a samen
+Tel: 1 – 2 – 3
+
+Am
+e|-----0---0--|
+B|-----1---1--|
+G|-----2---2--|
+D|------------|
+A|-0----------|
+E|------------|
+
+<t>T5 zoals intro The Final Trawl (lage D)</t>
+De 6e snaar is gestemd als lage D. Neem de D-groep.
+plaatje: T5-tokkel.png
