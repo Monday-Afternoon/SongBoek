@@ -17,7 +17,7 @@ D|------------|
 A|--0---------|
 E|------------|
 
-->--p--i--m--a
+A|--p--i--m--a
 
 <t>T2 · p i m a m i (rollend, 6 achtsten)</t>
 Een rollend patroon dat heen en weer gaat. Past bij 3/4 of 6/8.
