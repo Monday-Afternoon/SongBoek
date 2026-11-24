@@ -17,7 +17,6 @@ D|------------|
 A|--0---------|
 E|------------|
 
-A|--p--i--m--a
 
 <t>T2 · p i m a m i (rollend, 6 achtsten)</t>
 Een rollend patroon dat heen en weer gaat. Past bij 3/4 of 6/8.
@@ -31,7 +30,7 @@ G|---2-------2|
 D|------------|
 A|-0----------|
 E|------------|
-   p i m a m i
+
 
 <t>T3 · Wisselbas (8 achtsten, 4/4)</t>
 De basis van veel folk. De duim wisselt tussen de A- en D-snaar, i en m spelen daartussen.
@@ -45,7 +44,7 @@ G|---0-------0----|
 D|-----2-------2--|
 A|-3-------3------|
 E|----------------|
-   p i p m p i p m 
+
 
 <t>T4 · Wals (3/4)</t>
 De duim speelt de bas, daarna volgen twee keer drie snaren tegelijk.
@@ -53,13 +52,13 @@ Vingers: p, dan i-m-a samen, dan nog een keer i-m-a samen
 Tel: 1 – 2 – 3
 
 Am
-e|-----0---0--|  a
-B|-----1---1--|  m
-G|-----2---2--|  i
+e|-----0---0--|
+B|-----1---1--|
+G|-----2---2--|
 D|------------|
 A|-0----------|
 E|------------|
-   p
+  
 
 <t>T5 zoals intro The Final Trawl (lage D)</t>
 De 6e snaar is gestemd als lage D. Neem de D-groep.
@@ -78,4 +77,4 @@ G|---2---2-----------|
 D|-0-----------------|
 A|-------------------|
 E|-------------------|
-   p i m i a    m
+
