@@ -2,7 +2,7 @@
 Begin op één akkoord en speel heel traag. Pas als het soepel gaat voeg je akkoordwissels toe.
 Elke vinger heeft zijn eigen snaar: p = duim (lage snaren), i = wijsvinger (G-snaar), m = middelvinger (B-snaar), a = ringvinger (dunne e-snaar).
 Zet een metronoom op ongeveer 60 slagen per minuut en bouw rustig op.
-De cijfers op de lijntjes geven aan in welke vakje je de vingers plaatst. De 0 staat voor losse snaar. De 1 is in het 1e vakje, de 2 op de 2e positie etc.
+De cijfers op de lijntjes (de snaren) geven aan in welke vakje/fretje je de vingers plaatst. De 0 staat voor losse snaar. De 1 is in het 1e vakje, de 2 op de 2e positie etc.
 
 <t>T1 · p i m a (kwartnoten, 4/4)</t>
 De beginnerstokkel. Eén noot per tel.
@@ -16,6 +16,7 @@ G|-----2------|
 D|------------|
 A|--0---------|
 E|------------|
+    p  i  m  a
 
 <t>T2 · p i m a m i (rollend, 6 achtsten)</t>
 Een rollend patroon dat heen en weer gaat. Past bij 3/4 of 6/8.
@@ -29,6 +30,7 @@ G|---2-------2|
 D|------------|
 A|-0----------|
 E|------------|
+   p i m a m i
 
 <t>T3 · Wisselbas (8 achtsten, 4/4)</t>
 De basis van veel folk. De duim wisselt tussen de A- en D-snaar, i en m spelen daartussen.
@@ -42,6 +44,7 @@ G|---0-------0----|
 D|-----2-------2--|
 A|-3-------3------|
 E|----------------|
+   p i p m p i p m 
 
 <t>T4 · Wals (3/4)</t>
 De duim speelt de bas, daarna volgen twee keer drie snaren tegelijk.
@@ -49,13 +52,29 @@ Vingers: p, dan i-m-a samen, dan nog een keer i-m-a samen
 Tel: 1 – 2 – 3
 
 Am
-e|-----0---0--|
-B|-----1---1--|
-G|-----2---2--|
+e|-----0---0--|  a
+B|-----1---1--|  m
+G|-----2---2--|  i
 D|------------|
 A|-0----------|
 E|------------|
+   p
 
 <t>T5 zoals intro The Final Trawl (lage D)</t>
 De 6e snaar is gestemd als lage D. Neem de D-groep.
 plaatje: T5-tokkel.png
+
+
+<t>T6 · p i m i a m (rollend, 4 achtsten, 2 kwart, 4/4)</t>
+De duim speelt de bas, Past bij 4/4.
+Vingers: p i m i a m
+Tel: e-ne, twee-je , 3 , 4 
+
+D
+e|---------0---------|
+B|-----3--------3----|
+G|---2---2-----------|
+D|-0-----------------|
+A|-------------------|
+E|-------------------|
+   p i m i a    m
