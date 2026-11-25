@@ -1,6 +1,6 @@
 <t>Zo oefen je een tokkel</t>
 Begin op één akkoord en speel heel traag. Pas als het soepel gaat voeg je akkoordwissels toe.
-Elke vinger heeft zijn eigen snaar: p = duim (lage snaren), i = wijsvinger (G-snaar), m = middelvinger (B-snaar), a = ringvinger (dunne e-snaar).
+Elke vinger heeft zijn eigen snaar: p = duim (lage snaren - grondtoon van het akkoord), i = wijsvinger (G-snaar), m = middelvinger (B-snaar), a = ringvinger (dunne e-snaar).
 Zet een metronoom op ongeveer 60 slagen per minuut en bouw rustig op.
 De cijfers op de lijntjes (de snaren) geven aan in welke vakje/fretje je de vingers plaatst. De 0 staat voor losse snaar. De 1 is in het 1e vakje, de 2 op de 2e positie etc.
 
@@ -47,7 +47,7 @@ E|----------------|
 
 
 <t>T4 · Wals (3/4)</t>
-De duim speelt de bas, daarna volgen twee keer drie snaren tegelijk.
+De duim speelt de bas (grondtoon van het akkoord), daarna volgen twee keer drie snaren tegelijk.
 Vingers: p, dan i-m-a samen, dan nog een keer i-m-a samen
 Tel: 1 – 2 – 3
 
@@ -77,4 +77,19 @@ G|---2---2-----------|
 D|-0-----------------|
 A|-------------------|
 E|-------------------|
+
+
+<t>T7 · Wisselbas (8 achtsten, 4/4)</t>
+De basis van veel folk. De duim wisselt tussen de E- en D-snaar en speelt grondtoon van een akkoord.
+De i speelt daartussen (Vereenvoudigde vorm van T3)
+Vingers: p i p i p i p i 
+Tel: e-ne, twee-je, drie-je, vie-re
+
+> e|---C-akkoord-------|----F-akkoord------|
+B|----------------|----------------|
+G|---0---0---0---0|---0---0---0---0|
+D|-----2-------2--|-----2-------2--|
+A|-3-------3------|----------------|
+E|----------------|-3-------3------|
+
 
