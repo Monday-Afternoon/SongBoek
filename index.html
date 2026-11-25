@@ -414,6 +414,12 @@ function parseTokkels(tekst) {
     if (!b) continue;
     if (!r.trim()) { b.regels.push({t: 'leeg'}); continue; }
     if ((m = r.trim().match(/^plaatje:\s*(.+)$/i))) { b.regels.push({t: 'img', f: m[1].trim()}); continue; }
+    // geluid: T3.mp3   of   geluid: Zo klinkt het=T3.mp3  (opschrift van de knop = deel voor het =)
+    if ((m = r.trim().match(/^geluid:\s*(.+)$/i))) {
+      const w = m[1].trim(), i = w.indexOf('=');
+      b.regels.push({t: 'snd', label: i > 0 ? w.slice(0, i).trim() : '', f: i > 0 ? w.slice(i + 1).trim() : w});
+      continue;
+    }
     if (TABREGEL.test(r)) {
       const v = b.regels[b.regels.length - 1];
       if (v && v.t === 'tab') v.tekst += '\n' + r; else b.regels.push({t: 'tab', tekst: r});
@@ -443,8 +449,27 @@ async function toonTokkels(nr) {
     blokken.map(b => `<section class="tokkel${b.nr && b.nr === nr ? ' gekozen' : ''}" id="tokkel-${esc(b.nr || '')}">
       <h2>${esc(b.titel)}</h2>` + b.regels.map(r =>
         r.t === 'tab' ? `<pre class="tab">${esc(r.tekst)}</pre>` :
+        r.t === 'snd' ? `<div class="geluid" data-f="${esc(r.f)}" data-l="${esc(r.label || (b.nr ? 'Zo klinkt ' + b.nr : 'Beluister'))}"><button class="noten" type="button"></button><label class="info"><input type="checkbox"> Herhaal</label><audio controls preload="none" hidden></audio></div>` :
         r.t === 'img' ? `<img class="scan" src="${esc(map + '/' + encodeURIComponent(r.f))}" alt="${esc(b.titel)}">` :
         r.t === 'tekst' ? `<div class="regel">${esc(r.tekst)}</div>` : '<div class="leeg"></div>').join('') + '</section>').join('');
+  // geluidsknoppen: ▶/⏸, herhalen, en maar één tegelijk
+  document.querySelectorAll('.geluid[data-f]').forEach(g => {
+    const knop = g.querySelector('button'), speler = g.querySelector('audio'), herhaal = g.querySelector('input');
+    const zet = () => { knop.textContent = (speler.paused ? '♪ ' : '⏸ ') + g.dataset.l; };
+    zet();
+    knop.addEventListener('click', () => {
+      speler.hidden = false;
+      if (!speler.src) speler.src = map + '/' + encodeURIComponent(g.dataset.f);
+      if (speler.paused) speler.play().catch(() => {}); else speler.pause();
+    });
+    speler.addEventListener('play', () => {
+      if (huidigGeluid && huidigGeluid !== speler) huidigGeluid.pause();
+      huidigGeluid = speler;
+      zet();
+    });
+    ['pause', 'ended'].forEach(n => speler.addEventListener(n, zet));
+    herhaal.addEventListener('change', e => { speler.loop = e.target.checked; });
+  });
   const doel = nr && document.getElementById('tokkel-' + nr);
   if (doel) setTimeout(() => doel.scrollIntoView({block: 'start'}), 0);
 }

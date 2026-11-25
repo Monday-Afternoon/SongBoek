@@ -9,6 +9,9 @@ Bij een akkoord staan de vingers meestal al in het goede vakje.
 De beginnerstokkel. Eén noot per tel.
 Vingers: p i m a
 Tel: 1 – 2 – 3 – 4
+geluid: Langzaam=T1 langzaam.mp3
+geluid: Op tempo=T1 tempo.mp3
+
 
 Am
 e|-----------0|
@@ -23,6 +26,8 @@ E|------------|
 Een rollend patroon dat heen en weer gaat. Past bij 3/4 of 6/8.
 Vingers: p i m a m i
 Tel: 1 en 2 en 3 en
+geluid: Langzaam=T2 langzaam.mp3
+geluid: Op tempo=T2 tempo.mp3
 
 Am
 e|-------0----|
@@ -37,6 +42,8 @@ E|------------|
 De basis van veel folk. De duim wisselt tussen de A- en D-snaar, i en m spelen daartussen.
 Vingers: p i p m p i p m
 Tel: 1 en 2 en 3 en 4 en
+geluid: Langzaam=T3 langzaam.mp3
+geluid: Op tempo=T3 tempo.mp3
 
 C
 e|----------------|
@@ -51,6 +58,8 @@ E|----------------|
 De duim speelt de bas (grondtoon van het akkoord), daarna volgen twee keer drie snaren tegelijk.
 Vingers: p, dan i-m-a samen, dan nog een keer i-m-a samen
 Tel: 1 – 2 – 3
+geluid: Langzaam=T4 langzaam.mp3
+geluid: Op tempo=T4 tempo.mp3
 
 Am
 e|-----0---0--|
@@ -64,12 +73,16 @@ E|------------|
 <t>T5 zoals intro The Final Trawl (lage D)</t>
 De 6e snaar is gestemd als lage D. Neem de D-groep.
 plaatje: T5-tokkel.png
+geluid: Langzaam=T5 langzaam.mp3
+geluid: Op tempo=T5 tempo.mp3
 
 
 <t>T6 · p i m i a m (rollend, 4 achtsten, 2 kwart, 4/4)</t>
 De duim speelt de bas, Past bij 4/4.
 Vingers: p i m i a m
 Tel: e-ne, twee-je , 3 , 4 
+geluid: Langzaam=T6 langzaam.mp3
+geluid: Op tempo=T6 tempo.mp3
 
 D
 e|---------0---------|
@@ -85,6 +98,8 @@ De basis van veel folk. De duim wisselt tussen de E- en D-snaar en speelt grondt
 De i speelt daartussen (Vereenvoudigde vorm van T3)
 Vingers: p i p i p i p i 
 Tel: e-ne, twee-je, drie-je, vie-re
+geluid: Langzaam=T7 langzaam.mp3
+geluid: Op tempo=T7 tempo.mp3
 
 > e|---C-akkoord-------|----F-akkoord------|
 B|----------------|----------------|
