@@ -108,4 +108,7 @@ D|-----2-------2--|-----2-------2--|
 A|-3-------3------|----------------|
 E|----------------|-3-------3------|
 
-
+<t>T8 De standaard Travis-Tokkel met C akkoord</t>
+plaatje: T8-tokkel.png
+geluid: Langzaam=T8 langzaam.mp3
+geluid: Op tempo=T8 tempo.mp3
