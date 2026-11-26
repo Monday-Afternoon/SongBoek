@@ -53,6 +53,12 @@ button.noten{font:inherit;background:transparent;cursor:pointer}
 .ly{white-space:pre;min-height:1.4em}
 .akk{margin:0 0 .35em}.akk .ch{display:inline-block;padding-right:1em}
 .leeg{height:.4em}
+#opening{position:fixed;inset:0;z-index:100;background:#000;display:flex;align-items:center;justify-content:center;transition:opacity .5s}
+#opening.weg{opacity:0;pointer-events:none}
+#opening video{max-width:100%;max-height:100%}
+#opening button{position:absolute;bottom:max(16px,env(safe-area-inset-bottom));padding:8px 14px;border:1px solid #fff8;border-radius:6px;background:#0008;color:#fff;font:inherit;cursor:pointer}
+#opening #openingOver{right:16px}
+#opening #openingGeluid{left:16px}
 .tokkel{margin:1.4em 0 1.8em}.tokkel h2{font-size:1.1em;margin:0 0 .4em}
 .tokkel.gekozen{outline:2px solid var(--chord);outline-offset:6px;border-radius:6px}
 .tokkel .scan{max-width:100%;border-radius:6px}
@@ -491,6 +497,34 @@ function route() {
 }
 addEventListener('hashchange', route);
 route();
+
+// ---- Openingsfilm: staat in songs/ (standaard MA.mp4); uitzetten kan met  openingsfilm: ''  in instellingen.js ----
+async function openingsfilm() {
+  const naam = INST.openingsfilm === undefined ? 'MA.mp4' : INST.openingsfilm;
+  if (!naam) return;
+  if (location.hash && location.hash !== '#') return;          // directe link naar een song: geen film
+  try { if (sessionStorage.getItem('openingGezien')) return; sessionStorage.setItem('openingGezien', '1'); } catch (e) {}
+  const map = await songsMap();
+  const laag = document.createElement('div');
+  laag.id = 'opening';
+  laag.innerHTML = `<video playsinline preload="auto" src="${esc(map + '/' + encodeURIComponent(naam))}"></video><button type="button" id="openingOver">Overslaan ›</button><button type="button" id="openingGeluid" hidden>🔊 Geluid aan</button>`;
+  document.body.appendChild(laag);
+  const v = laag.querySelector('video'), geluidKnop = laag.querySelector('#openingGeluid');
+  const sluit = () => { v.pause(); laag.classList.add('weg'); setTimeout(() => laag.remove(), 600); };
+  v.addEventListener('ended', sluit);
+  v.addEventListener('error', sluit);                           // film niet gevonden: gewoon de site tonen
+  laag.querySelector('#openingOver').addEventListener('click', sluit);
+  try { await v.play(); }                                       // eerst met geluid
+  catch (e) {                                                   // browser blokkeert dat soms: dan zonder geluid
+    v.muted = true;
+    try {
+      await v.play();
+      geluidKnop.hidden = false;
+      geluidKnop.addEventListener('click', () => { v.muted = false; geluidKnop.hidden = true; });
+    } catch (e2) { sluit(); }
+  }
+}
+openingsfilm();
 </script>
 </body>
 </html>
